@@ -1,0 +1,445 @@
+/* ==================== FONT IMPORT ==================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Container-Footer {
+    width: 100%;
+    height: auto;
+    background-color: #1c1c1c;
+    /*background-color: #252e31;*/
+    box-sizing: border-box;
+    /*background-image: url("../Assets/banner19.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex ;
+    flex-direction: column;
+    align-items: center;
+    /*padding: 100px;*/
+    /*padding: 5%;*/
+    padding-top: 75px;
+    padding-bottom:70px;
+}
+
+/*----------Container-Footer-content1-----------------------------------*/
+
+.Container-Footer-content1 {
+    width: 90%;
+    height: auto;
+    /*background-color: yellow;*/
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+/*---------Container-Footer-logoSlogan------------------------*/
+
+.Container-Footer-logoSlogan {
+    width: 250px;
+    height: auto;
+    /*background-color: black;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*gap: 50px;*/
+    /*background-color: red;*/
+}
+
+.logo-falcon-Footer {
+    width: 210px;
+    margin-bottom: 50px;
+}
+
+.Container-Footer-logoSlogan h1 {
+    font-family: "Poppins", sans-serif;
+    color: #f3bb2f;
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Container-Footer-logoSlogan button {
+    background: transparent;
+    color: white;
+    padding: 18px 35px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    gap: 10px;
+    border: 2px solid #f3bb2f;
+    transition: transform 0.3s ease, background-color0.3s ease;
+}
+
+.Container-Footer-logoSlogan button:hover {
+    transform: scale(1.1);
+}
+
+/*------Container-Footer-links-----------------*/
+
+.Container-Footer-links {
+    width: 800px;
+    height: auto;
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: center;
+    gap:0px;
+    flex-wrap: wrap;
+}
+
+.Container-Footer-links-details {
+    width: 170px;
+    height: 300px;
+    /*background-color: #0b3f88;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.Container-Footer-links-details-contact {
+    width: 250px;
+    height: auto;
+    /*background-color: red;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer-title-details-small {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.Footer-title {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 19px;
+    font-weight: 550;
+    margin-bottom: 20px;
+}
+
+.Footer-links {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.Footer-links:hover {
+    color: #f3bb2f;
+}
+
+.Footer-title-details {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    /*color: #f3bb2f;*/
+}
+
+/*-------Container-Footer-SocialMedia-------*/
+
+.Container-Footer-SocialMedia {
+    width: 200px;
+    height: auto;
+    /*background-color: violet;*/
+    display: flex;
+    flex-direction: column;
+}
+
+.Footer-SocialMedia {
+    width: 170px;
+    height: auto;
+    /*background-color: green;*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.Footer-SocialMedia-icon {
+    background-color: transparent;
+    /*padding: 10px;*/
+    width: 35px;
+    height: 35px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid #f3bb2f;
+    transition: transform 0.3s ease, background-color0.3s ease;
+}
+
+.Footer-SocialMedia-icon:hover {
+    transform: scale(1.1);
+    border-color: white;
+}
+
+.Footer-SocialMedia-icon i {
+    font-size: 19px;
+    color: white;
+}
+
+.Footer-SocialMedia-icon:hover i {
+    color: #f3bb2f;
+}
+
+/*-----------Container-Footer-content2----------------------------------*/
+
+.Container-Footer-content2 {
+    width: 50%;
+    height: auto;
+    /*background-color: orange;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Container-Footer-content2 h1 {
+    text-align: center;
+    color: white;
+    font-family:"Poppins", sans-serif ;
+    font-size: 16px ;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.Container-Footer-TextNewsletter {
+    /*background-color: white;*/
+    border-radius: 15px;
+    width: auto;
+    height: 140px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.Input-Form-footer {
+    background: transparent;
+    border: 2px solid darkgray;
+    color: black;
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 15px 120px 15px 20px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.button-Form-footer {
+    background: transparent;
+    color: white;
+    margin-left: 20px;
+    padding: 15px 32px;
+    border-radius: 30px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid #f3bb2f;
+    cursor: pointer;        /* ajoute un curseur clic */
+    transition: transform 0.3s ease, background-color0.3s ease;
+}
+
+.button-Form-footer:hover {
+    /*background: #f3bb2f;*/
+    /*color: black;*/
+    border: 2px solid #f3bb2f;
+    transform: scale(1.1);
+}
+
+.Container-Footer-content2 p {
+    text-align: center;
+    color: white;
+    font-family:"Poppins", sans-serif ;
+    font-size: 11px ;
+    margin-bottom: 20px;
+    font-weight: 200;
+}
+
+
+/*-------------------------------------------*/
+
+@media screen and (max-width:1610px) {
+
+    .Container-Footer-content1 {
+        /*background-color: yellow;*/
+        gap: 50px;
+    }
+
+    /*-------Container-Footer-SocialMedia-------*/
+
+    .Container-Footer-SocialMedia {
+        width: 350px;
+        /*background-color: violet;*/
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Footer-SocialMedia {
+        width: 350px;
+        /*background-color: green;*/
+    }
+
+}
+
+/*-------------------------------------------*/
+
+@media screen and (max-width:940px) {
+    .Container-Footer {
+        width: 100%;
+        height: auto;
+        /*background-color: #071b21;*/
+        box-sizing: border-box;
+        /*background-image: url("../Assets/banner19.jpg");*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+        /*padding: 5%;*/
+        padding-top: 70px;
+        padding-bottom: 70px;
+        /*background-color: #25D366;*/
+    }
+
+    .Container-Footer-content1 {
+        width: 90%;
+        height: auto;
+        gap: 0px;
+        /*background-color: yellow;*/
+    }
+
+    .Container-Footer-content2 {
+        width: 90%;
+        height: 200px;
+        /*background-color: orange;*/
+
+    }
+
+    /*---------Container-Footer-links------*/
+
+    .Container-Footer-links {
+        width: 100%;
+        height: auto;
+        /*width: 300px;*/
+        /*background-color: blue;*/
+        gap:30px;
+    }
+
+    .Container-Footer-links-details {
+        width: 90px;
+        height: auto;
+        /*background-color: #0b3f88;*/
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .Container-Footer-links-details-contact {
+        width: 200px;
+        /*background-color: red;*/
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .Footer-title-details-small {
+        font-size: 13px;
+        margin-bottom: 10px;
+        margin-left: 30px;
+    }
+
+    /**-------Container-Footer-SocialMedia-------*!*/
+
+    .Container-Footer-SocialMedia {
+        width: 90%;
+        height: auto;
+        /*background-color: violet;*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        /*flex-direction: column;*/
+    }
+
+    .Footer-SocialMedia {
+        width: 100%;
+        height: auto;
+        /*background-color: green;*/
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    /*-----------Container-Footer-content2----------------------------------*/
+
+    .Container-Footer-content2 {
+        width: 100%;
+        height: auto;
+        /*background-color: orange;*/
+    }
+
+    .Container-Footer-content2 h1 {
+        font-weight: 400;
+        width: 80%;
+    }
+
+    .Container-Footer-TextNewsletter {
+        /*background-color: red;*/
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .Form-footer-newsletter {
+        display: flex;
+        flex-direction: column;
+        gap: 20px; /* espace entre input et bouton */
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    .Input-Form-footer {
+        background: transparent;
+        border: 1px solid darkgray;
+        color: black;
+        border-radius: 10px;
+        font-size: 14px;
+        padding: 22px 150px 22px 20px;
+        font-weight: normal;
+        margin-bottom: 30px;
+        width: 90%;
+        /*height: 20%;*/
+    }
+
+    .button-Form-footer {
+        /*background: red;*/
+        margin-left: 0px;
+        width: 50px;
+        text-align: center;
+        padding: 15px 120px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

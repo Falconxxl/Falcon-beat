@@ -1,3 +1,6 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+Sitemap: https://www.falconbeat.nl/sitemap.xml
+
+Disallow: /Test

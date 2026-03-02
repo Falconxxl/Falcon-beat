@@ -1,0 +1,318 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Container-Contact {
+    width: 100%;
+    height: auto;
+    background-color:black;
+    box-sizing: border-box;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    /*background-image: url("../Assets/banner19.jpg");*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+/*------------title--------------*/
+
+.Container-Contact-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: center;*/
+}
+
+.Container-Contact-text h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #f3bb2f;
+    padding-bottom: 20px;
+    /*padding-top: 200px;*/
+    font-family: "Poppins", sans-serif;
+}
+
+.Container-Contact-text h2{
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.Container-Contact-text p{
+    font-size: 16px;
+    font-weight: 300;
+    /*width: 100%;*/
+    color: white;
+    /*background-color: red;*/
+    font-family: "Poppins", sans-serif;
+}
+
+/*------------contact form--------------*/
+
+.Contact-form-container {
+    /*background-color: black;*/
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 100px;
+    /*background-color: red;*/
+}
+
+.form-section {
+    /*display: flex;*/
+    /*flex-direction: column;*/
+}
+
+.field {
+    margin-bottom: 20px;
+}
+
+/*------------Planner--------------*/
+
+.section-contact-info {
+    /*background-color: black;*/
+    display: flex;
+    align-items: center;
+    /*justify-content: center;*/
+    flex-direction: column;
+    /*height: auto;*/
+    /*width: 50%;*/
+    width: 650px;
+    height: 400px;
+    /*padding: 20px;*/
+    /*background-color: greenyellow;*/
+}
+
+.title-info-contact{
+    color: #f3bb2f;
+    font-family: "Poppins", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    /*padding-left: 100px;*/
+    /*padding-top: 19px;*/
+}
+
+.contact-info-CallMail {
+    display: flex;
+    background-color: transparent;
+    width: 500px;
+    align-items: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contact-info-CallMail i {
+    color: #f3bb2f;
+}
+
+.contact-info-CallMail p {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 19px;
+}
+
+.contact-social-media {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /*background-color: darkgray;*/
+    margin-top: 20px;
+}
+
+.submit-btn-requestAQuote {
+    margin-top: 10px;
+    padding: 14px 28px;
+    border-radius: 40px;
+    border: 2px solid #f3bb2f;
+    cursor: pointer;
+    background-color: transparent;
+
+    /*background: linear-gradient(135deg, #f3bb2f, #ffcf5c);*/
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-bottom: 100px;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(243, 187, 47, 0.35);
+}
+
+.submit-btn-requestAQuote:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(243, 187, 47, 0.5);
+}
+
+.submit-btn-requestAQuote:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 12px rgba(243, 187, 47, 0.4);
+}
+
+.error {
+    color: #f3bb2f;
+    padding-bottom: 20px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+
+/*------------Planner--------------*/
+
+/*.container-planner-section {*/
+/*    background-color: blue;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    !*height: auto;*!*/
+/*    !*width: 50%;*!*/
+/*    width: 800px;*/
+/*    height: 700px;*/
+/*    padding: 20px;*/
+
+/*}*/
+
+/*-------------------------------------------*/
+
+@media screen and (max-width:940px) {
+
+
+    .Container-Contact {
+        /*width: 100%;*/
+        /*height: auto;*/
+        /*background-color:black;*/
+        /*box-sizing: border-box;*/
+        padding-top: 70px;
+        padding-bottom: 0px;
+    }
+
+    /*------------title--------------*/
+
+    .Container-Contact-text {
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        align-items: start;
+        padding: 20px;
+        /*justify-content: center;*/
+    }
+
+    .Container-Contact-text p{
+        font-size: 14px;
+
+    }
+
+    .section-contact-info {
+        /*background-color: black;*/
+        /*padding: 20px;*/
+        /*background-color: #25D366;*/
+        display: flex;
+        align-items: center;
+        /*justify-content: center;*/
+        flex-direction: column;
+        /*height: auto;*/
+        /*width: 50%;*/
+        width: 650px;
+        height: auto;
+        /*padding: 20px;*/
+        /*background-color: greenyellow;*/
+    }
+
+    .line-contact-info {
+        width: 70%;
+        height: 1px;
+        /*color: #f3bb2f;*/
+        background-color: #f3bb2f;
+        margin-bottom: 50px;
+    }
+    .title-info-contact{
+        padding-top: 0px;
+    }
+
+    /*-------*/
+
+    .Contact-form-container {
+        /*background-color: greenyellow;*/
+        /*display: flex;*/
+        /*justify-content: center;*/
+        /*height: auto;*/
+        width: 100%;
+        /*flex-wrap: wrap;*/
+        gap: 50px;
+    }
+
+    .section-contact-info {
+        /*background-color: blue;*/
+        display: flex;
+        align-items: center;
+        /*justify-content: center;*/
+        flex-direction: column;
+        /*height: auto;*/
+        /*width: 50%;*/
+        width: 100%;
+        height: 550px;
+        padding: 20px;
+    }
+
+    .title-info-contact{
+        color: #f3bb2f;
+        font-family: "Poppins", sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+        padding-top: 19px;
+    }
+
+    .contact-info-CallMail {
+        display: flex;
+        /*background-color: yellow;*/
+        width: 300px;
+        align-items: center;
+        gap: 30px;
+        margin-top: 30px;
+    }
+
+    .contact-info-CallMail i {
+        color: #f3bb2f;
+    }
+
+    .contact-info-CallMail p {
+        color: white;
+        font-family: "Poppins", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        padding-top: 19px;
+    }
+
+    .contact-social-media {
+        width: 100%;
+    }
+
+    .error {
+        padding-bottom: 20px;
+        font-size: 13px;
+    }
+
+    .form-section {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .submit-btn-requestAQuote {
+        margin-bottom: 0px;
+    }
+
+
+}

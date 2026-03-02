@@ -1,0 +1,183 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.hero-banner {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    overflow: hidden;
+}
+
+/* Background images */
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.desktop-image { display: block; }
+.mobile-image { display: none; }
+
+/* Hero content */
+.hero-content {
+    position: absolute;
+    top: 35%;               /* placé à 40% du haut */
+    left: 100px;            /* 250px depuis la gauche */
+    color: black;
+    height: auto;
+    /*width: 1vw;*/
+
+    /*background-color: blue;*/
+    /*max-width: calc(100% - 250px - 120px); !* laisse un espace à droite *!*/
+}
+
+.logo-falcon-banner {
+    width: 60%;
+    margin-bottom: 30px;
+}
+
+.hero-content h1 {
+    font-family:"Poppins", sans-serif;
+    font-size: 80px;      /* ou 7vw si tu veux responsive */
+    font-weight: 800;     /* ultra-thin */
+    color: black;
+    /*color: #f3bb2f;*/
+    line-height: 1.0;
+    margin-bottom: 30px;
+}
+
+.hero-content p {
+    /*font-family: "Figtree", sans-serif;*/
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 50px;   /* espace entre p et bouton */
+    font-weight: 500;
+    /*margin-top: 50px;*/
+}
+
+.hero-content .cta-btn {
+    display: inline-block;
+    /*background-color:rgba(0, 0, 0, 0.5);*/
+    text-decoration: none;
+    padding: 20px 40px;
+    font-family: "Figtree", sans-serif;
+    /*border-radius: 8px;*/
+    /*border: 2px solid #f3bb2f;*/
+    background-color: #f3bb2f;
+    /*color: black;*/
+    /*font-family: "Figtree", sans-serif;*/
+    /*border-radius: 8px;*/
+    border-radius: 60px;
+    font-size: 20px;
+    border: none;
+    /*letter-spacing: 1px;*/
+    /*margin-left: 200px;*/
+    color: black;
+    font-weight: 600;
+    /*transition: transform 0.3s ease, background-color 0.3s ease;*/
+}
+
+.cta-btn:hover {
+    /*background-color: #799da9;*/
+    background-color: black;
+    color: white;
+    border: 2px solid #f3bb2f;
+}
+
+/* Scroll button */
+.scroll-down {
+    position: absolute;
+    bottom: 30px;
+    left: 92%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    animation: bounce 2s infinite;
+    /*background-color: white;*/
+    background-color: black;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+}
+
+.scroll-down:hover {
+    /*background-color: #799da9;*/
+    background-color: black;
+    color: white;
+    border: 2px solid #f3bb2f;
+}
+
+/* Animation */
+@keyframes bounce {
+    0%, 100% { transform: translate(-50%, 0); }
+    50% { transform: translate(-50%, -10px); }
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .hero-content {
+        left: 80px;
+        right: 80px;
+        top: 30%;
+    }
+    .hero-content h1 { font-size: 4rem; margin-bottom: 50px; }
+    .hero-content p { font-size: 1.2rem; margin-bottom: 80px; }
+}
+
+@media (max-width: 768px) {
+
+    .hero-banner {
+        height: 50vh;
+    }
+
+    .desktop-image { display: none; }
+    .mobile-image { display: block; }
+
+    .hero-content {
+        top: 20%;
+        left: 10%;
+        right: 10%;
+        margin-bottom: 30px;
+    }
+
+    .logo-falcon-banner {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+
+    .hero-content h1 { font-size: 3rem; white-space: normal; margin-bottom: 20px;
+    margin-top: 30px}
+    .hero-content p { font-size: 1.2rem; margin-bottom: 60px; }
+    .hero-content .cta-btn { padding: 20px 60px; font-size: 1.2rem; }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 { font-size: 3rem; }
+    /*.hero-content p { font-size: 1rem; margin-bottom: 60px; }*/
+    .hero-content .cta-btn  {
+        /*font-size: 1.1rem;*/
+        /*padding: 20px 35px;*/
+    }
+    .scroll-down {
+        left: 90%;
+        bottom: 30px;
+        font-size: 1.2rem;
+    }
+
+}
+

@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: white;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+.header {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 1px solid purple;
+}
+
+.layout {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.sidebar {
+    width: 220px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.genre {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.genre.active {
+    background: purple;
+}
+
+.content {
+    flex: 1;
+}
+
+.beat-card {
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.play-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: purple;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.beat-info {
+    flex: 1;
+}
+
+.price {
+    margin-right: 15px;
+    color: #c084fc;
+}
+
+.share-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.player {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: black;
+    padding: 10px;
+}
+
+.progress {
+    height: 4px;
+    background: #333;
+}
+
+.progress-bar {
+    height: 100%;
+    background: purple;
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

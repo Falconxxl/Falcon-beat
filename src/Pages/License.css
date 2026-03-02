@@ -1,0 +1,483 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Container License */
+.Container-License {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    /*background-color: red;*/
+    padding: 70px 40px;
+    font-family: 'Poppins', sans-serif;
+    /*background-color: #3d8ef9;*/
+}
+
+/* License Intro Section */
+.license-intro-section {
+    text-align: left;
+    /*margin-bottom: 50px;*/
+    /*background-color: red;*/
+    /*border-bottom: 1px solid white;*/
+    /*border-bottom: 1px solid white;*/
+}
+
+.license-main-title {
+    font-size: 48px;
+    font-weight: 700;
+    color: #f3bb2f;
+    letter-spacing: -0.5px;
+    margin-bottom: 100px;
+}
+
+.license-intro-text {
+    font-size: 18px;
+    color: #ffffff;
+    max-width: 800px;
+    /*margin: 0 auto 50px;*/
+    margin-bottom: 40px;
+    line-height: 1.6;
+    margin-top: -30px;
+}
+
+/* Categories Grid */
+.license-categories-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.category-card {
+    /*background: rgba(255, 255, 255, 0.05);*/
+    border: 2px solid #f3bb2f;
+    background-color: transparent;
+    /*border: 2px solid rgba(243, 187, 47, 0.3);*/
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(243, 187, 47, 0.2);
+    border-color: #f3bb2f;
+}
+
+.category-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.category-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.category-description {
+    font-size: 15px;
+    color: white;
+    line-height: 1.5;
+}
+
+/* License Sections */
+.license-section {
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #f3bb2f;
+    margin-bottom: 16px;
+    text-align: left;
+    /*background-color: red;*/
+}
+
+.section-description {
+    font-size: 17px;
+    color: #ffffff;
+    text-align: left;
+    max-width: 700px;
+    /*margin: 0 auto 40px;*/
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+/* License Cards Grid */
+.license-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.license-card {
+    background: transparent;
+    /*background: rgba(255, 255, 255, 0.05);*/
+    border: 2px solid #f3bb2f;
+    /*border: 2px solid rgba(255, 255, 255, 0.1);*/
+    border-radius: 16px;
+    padding: 35px 28px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.license-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+
+    /*background: linear-gradient(90deg, transparent, rgba(243, 187, 47, 0.5), transparent);*/
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.license-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    border-color: rgba(243, 187, 47, 0.4);
+}
+
+.license-card:hover::before {
+    opacity: 1;
+}
+
+.license-card.featured {
+    border:2px solid #f3bb2f;
+    background: transparent;
+    /*border-color: rgba(243, 187, 47, 0.5);*/
+    /*background: rgba(243, 187, 47, 0.05);*/
+}
+
+.license-bullet {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+/*.license-bullet.green {*/
+/*    background-color: #2ecc71;*/
+/*    box-shadow: 0 0 15px rgba(46, 204, 113, 0.5);*/
+/*}*/
+
+/*.license-bullet.blue {*/
+/*    background-color: #3498db;*/
+/*    box-shadow: 0 0 15px rgba(52, 152, 219, 0.5);*/
+/*}*/
+
+/*.license-bullet.purple {*/
+/*    background-color: #9b59b6;*/
+/*    box-shadow: 0 0 15px rgba(155, 89, 182, 0.5);*/
+/*}*/
+
+/*.license-bullet.red {*/
+/*    background-color: #e74c3c;*/
+/*    box-shadow: 0 0 15px rgba(231, 76, 60, 0.5);*/
+/*}*/
+
+/*.license-bullet.yellow {*/
+/*    background-color: #f3bb2f;*/
+/*    box-shadow: 0 0 15px rgba(243, 187, 47, 0.5);*/
+/*}*/
+
+/*.license-bullet.orange {*/
+/*    background-color: #e67e22;*/
+/*    box-shadow: 0 0 15px rgba(230, 126, 34, 0.5);*/
+/*}*/
+
+.license-card-title {
+    font-size: 22px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.license-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.license-features li {
+    font-size: 16px;
+    color: white;
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.5;
+}
+
+.license-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #f3bb2f;
+    font-weight: 700;
+}
+
+/* Typical Uses */
+.typical-uses {
+    background: rgba(243, 187, 47, 0.08);
+    border-left: 4px solid #f3bb2f;
+    padding: 25px 30px;
+    margin-bottom: 40px;
+    border-radius: 8px;
+}
+
+.typical-uses-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #f3bb2f;
+    margin-bottom: 15px;
+}
+
+.uses-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.uses-list li {
+    font-size: 15px;
+    color: #ffffff;
+    padding-left: 20px;
+    position: relative;
+}
+
+.uses-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #f3bb2f;
+    font-size: 20px;
+}
+
+/* Finished Songs Content */
+.finished-songs-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.info-box {
+
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid #3d8ef9;
+    padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.info-icon {
+    font-size: 28px;
+    color: #3498db;
+    flex-shrink: 0;
+    margin-top: 3px;
+}
+
+.info-text {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Important Section */
+.important-section {
+    background: transparent;
+    border: 2px solid #ff4e4e;
+    border-radius: 16px;
+    padding: 40px;
+}
+
+.legal-notice {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.legal-text {
+    font-size: 16px;
+    color: #ffffff;
+    line-height: 1.8;
+    text-align: center;
+}
+
+/* WhatsApp Note */
+.whatsapp-note {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.whatsapp-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background-color: transparent;
+    /*background: linear-gradient(135deg, #25d366, #128c7e);*/
+    color: #25D366;
+    border: 2px solid #25D366;
+    padding: 14px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 25px rgba(37, 211, 102, 0.5);
+    color: #25D366;
+    border: 2px solid #25D366;
+    /*background: linear-gradient(135deg, #128c7e, #25d366);*/
+}
+
+.whatsapp-link i {
+    font-size: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .Container-License {
+        padding: 60px 30px;
+    }
+
+    .license-main-title {
+        font-size: 40px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .license-categories-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .category-card {
+        padding: 30px 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Container-License {
+        padding: 40px 20px;
+    }
+
+    .license-main-title {
+        font-size: 32px;
+    }
+
+    .license-intro-text {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .section-description {
+        font-size: 15px;
+    }
+
+    .license-cards-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .license-card {
+        padding: 28px 22px;
+    }
+
+    .license-card-title {
+        font-size: 20px;
+    }
+
+    .license-features li {
+        font-size: 14px;
+    }
+
+    .category-icon {
+        font-size: 40px;
+    }
+
+    .category-title {
+        font-size: 20px;
+    }
+
+    .category-description {
+        font-size: 14px;
+    }
+
+    .uses-list {
+        grid-template-columns: 1fr;
+    }
+
+    .info-box {
+        flex-direction: column;
+        padding: 25px 20px;
+    }
+
+    .important-section {
+        padding: 30px 20px;
+    }
+
+    .whatsapp-link {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .whatsapp-link i {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .Container-License {
+        padding: 30px 15px;
+    }
+
+    .license-main-title {
+        font-size: 28px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .license-card {
+        padding: 24px 18px;
+    }
+
+    .license-card-title {
+        font-size: 18px;
+    }
+
+    .typical-uses {
+        padding: 20px;
+    }
+
+    .info-box {
+        padding: 20px 15px;
+    }
+
+    .legal-text {
+        font-size: 14px;
+    }
+}

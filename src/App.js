@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Beat from "./Pages/Beat";
+import { Routes, Route } from "react-router-dom";
+import Songs from "./Pages/Songs";
+import License from "./Pages/License";
+import About from "./Pages/About";
+import Contact from "./Pages/Contact";
+import Faq from "./Pages/Faq";
+import Commercial from "./Pages/Commercial";
+import Collab from "./Pages/Collab";
+import Test from "./Test/Test";
+import New from "./Pages/New";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Routes>
+                <Route exact path='/' element={<Beat/>}></Route>
+                <Route exact path='/New' element={<New/>}></Route>
+                <Route exact path='/Commercial' element={<Commercial/>}></Route>
+                <Route path='/Songs' element={<Songs/>}></Route>
+                <Route path='/License' element={<License/>}></Route>
+                <Route path='/About' element={<About/>}></Route>
+                <Route path='/Collab' element={<Collab/>}></Route>
+                <Route path='/Contact' element={<Contact/>}></Route>
+                <Route path='/Faq' element={<Faq/>}></Route>
+                <Route path='/Test' element={<Test/>}></Route>
+            </Routes>
+
+        </>
+
+    );
 }
 
 export default App;

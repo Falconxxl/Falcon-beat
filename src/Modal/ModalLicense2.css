@@ -1,0 +1,388 @@
+/* ==================== LICENSE MODAL ==================== */
+/* ✅ AMÉLIORATION : Overlay plus responsive avec meilleur support mobile */
+.license-modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    backdrop-filter: blur(8px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2200;
+    padding: 0;
+    animation: fadeIn 0.3s ease;
+    /* ✅ Permettre le scroll sur mobile */
+    overflow-y: auto;
+    /* ✅ Amélioration du touch sur mobile */
+    -webkit-overflow-scrolling: touch;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* ✅ AMÉLIORATION : Modal content plus fluide avec scroll optimisé */
+.license-modal-content {
+    background: #000000;
+    border-radius: 20px;
+    max-width: 1400px;
+    width: 100%;
+    max-height: 90vh;
+    padding: 3rem 2rem;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    animation: slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    /* ✅ Scroll plus smooth sur mobile */
+    -webkit-overflow-scrolling: touch;
+    /* ✅ Masquer la scrollbar sur certains navigateurs */
+    scrollbar-width: thin;
+    scrollbar-color: rgba(243, 187, 47, 0.5) rgba(255, 255, 255, 0.1);
+}
+
+/* ✅ Personnalisation de la scrollbar pour WebKit (Chrome, Safari) */
+.license-modal-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.license-modal-content::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+.license-modal-content::-webkit-scrollbar-thumb {
+    background: rgba(243, 187, 47, 0.5);
+    border-radius: 10px;
+}
+
+.license-modal-content::-webkit-scrollbar-thumb:hover {
+    background: rgba(243, 187, 47, 0.7);
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px) scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+/* ✅ AMÉLIORATION : Bouton de fermeture sticky en mobile */
+.license-modal-close-btn {
+    position: sticky;
+    top: 1rem;
+    right: 0;
+    margin-left: auto;
+    display: flex;
+    background: rgba(0, 0, 0, 0.8);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    z-index: 10;
+    /* ✅ Amélioration du touch sur mobile */
+    -webkit-tap-highlight-color: transparent;
+}
+
+.license-modal-close-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #f3bb2f;
+    color: #f3bb2f;
+    transform: rotate(90deg);
+}
+
+.license-modal-close-btn:active {
+    transform: rotate(90deg) scale(0.95);
+}
+
+.license-modal-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 3rem;
+    margin-top: 0;
+}
+
+.license-tables-container {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.license-table {
+    background: #191818;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    padding: 10px;
+    max-width: 300px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    /* ✅ Transition smooth pour le scroll */
+    scroll-margin-top: 20px;
+}
+
+.license-table-header {
+    background: #191818;
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+}
+
+.license-table-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 0.25rem 0;
+}
+
+.license-table-title.basic {
+    color: #f3bb2f;
+}
+
+.license-table-title.premium {
+    color: #f3bb2f;
+}
+
+.license-table-title.unlimited {
+    color: #f3bb2f;
+}
+
+.license-table-title.exclusive {
+    color: #f3bb2f;
+}
+
+.license-table-subtitle {
+    color: #6abcfc;
+    font-size: 0.9rem;
+    margin: 0;
+    font-weight: 500;
+}
+
+.license-table-price {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 0.75rem 0 0 0;
+}
+
+.license-table-body {
+    padding: 0;
+}
+
+.license-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 0.8rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.9rem;
+}
+
+.license-row:last-child {
+    border-bottom: none;
+}
+
+.license-row span:first-child {
+    color: white;
+    font-weight: 500;
+}
+
+.license-row span:last-child {
+    color: white;
+    font-weight: 600;
+}
+
+.license-row.note {
+    background: rgba(255, 255, 255, 0.03);
+    font-size: 0.75rem;
+    font-style: italic;
+    color: #999;
+}
+
+.license-row.note span {
+    color: #999;
+    font-weight: 400;
+}
+
+.checkmark {
+    color: #4ade80 !important;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.crossmark {
+    color: #ef4444 !important;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+/* ✅ AMÉLIORATION : Bouton de scroll caché par défaut */
+.license-modal-scroll-btn {
+    display: none;
+}
+
+/* ==================== RESPONSIVE LICENSE MODAL ==================== */
+@media (max-width: 1200px) {
+    .license-tables-container {
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .license-table {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    /* ✅ AMÉLIORATION : Overlay qui prend tout l'écran en mobile */
+    .license-modal-overlay {
+        padding: 0;
+        align-items: flex-start;
+    }
+
+    /* ✅ AMÉLIORATION : Modal content optimisé pour mobile */
+    .license-modal-content {
+        padding: 1.5rem 1rem;
+        max-height: 100vh;
+        border-radius: 20px 20px 0 0;
+        /* ✅ Meilleur scroll sur mobile */
+        overscroll-behavior: contain;
+    }
+
+    .license-modal-title {
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
+        padding-right: 50px;
+    }
+
+    .license-tables-container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        /* ✅ Padding bottom pour ne pas cacher le dernier tableau */
+        padding-bottom: 80px;
+    }
+
+    .license-table {
+        max-width: 100%;
+    }
+
+    /* ✅ AMÉLIORATION : Bouton de fermeture fixe en mobile */
+    .license-modal-close-btn {
+        position: fixed;
+        top: 1.5rem;
+        right: 1rem;
+        width: 44px;
+        height: 44px;
+        font-size: 1.4rem;
+        background: rgba(0, 0, 0, 0.9);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        /* ✅ Zone de touch plus grande */
+        padding: 12px;
+    }
+
+    /* ✅ AMÉLIORATION : Bouton de scroll visible et fonctionnel en mobile */
+    .license-modal-scroll-btn {
+        display: flex;
+        position: fixed;
+        bottom: 2rem;
+        right: 1rem;
+        width: 44px;
+        height: 44px;
+        font-size: 1.5rem;
+        border-radius: 50%;
+        background: rgba(243, 187, 47, 0.9);
+        color: black;
+        border: none;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        z-index: 10;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 12px rgba(243, 187, 47, 0.4);
+        /* ✅ Zone de touch plus grande */
+        padding: 12px;
+        /* ✅ Amélioration du touch */
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .license-modal-scroll-btn:hover,
+    .license-modal-scroll-btn:active {
+        background: rgba(243, 187, 47, 1);
+        transform: scale(1.1);
+        box-shadow: 0 6px 16px rgba(243, 187, 47, 0.6);
+    }
+
+    /* ✅ AMÉLIORATION : Animation du bouton de scroll */
+    .license-modal-scroll-btn {
+        animation: bounce 2s ease-in-out infinite;
+    }
+
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-5px);
+        }
+    }
+
+    .license-modal-scroll-btn:active {
+        animation: none;
+        transform: scale(0.95);
+    }
+}
+
+/* ✅ AMÉLIORATION : Support pour les très petits écrans */
+@media (max-width: 380px) {
+    .license-modal-content {
+        padding: 1rem 0.75rem;
+    }
+
+    .license-modal-title {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .license-table {
+        padding: 8px;
+    }
+
+    .license-table-header {
+        padding: 0.4rem 0.6rem;
+    }
+
+    .license-table-title {
+        font-size: 1.1rem;
+    }
+
+    .license-table-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .license-table-price {
+        font-size: 1rem;
+    }
+
+    .license-row {
+        padding: 0.4rem 0.6rem;
+        font-size: 0.85rem;
+    }
+}

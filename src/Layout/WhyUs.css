@@ -1,0 +1,155 @@
+/* Import Poppins Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.Container-WhyUs {
+    width: 100%;
+    /*background-color: #2b1f00;*/
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 30px;
+    /*border-top: 1px solid white;*/
+    /*background-color: red;*/
+}
+
+
+/* Container gauche */
+.Container-WhyUs-left {
+    flex: 1 1 40%;
+    max-width: 400px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 0px;
+}
+
+.Container-WhyUs-left h1 {
+    font-size: 48px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    font-weight: 650;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+/* Container droit */
+.Container-WhyUs-right {
+    flex: 1 1 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px; /* <-- Espace entre chaque bloc */
+}
+
+/* Bloc titre + paragraphes */
+.Container-WhyUs-right-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* <-- petit gap interne entre titre et paragraphe */
+    /*border-bottom: 1px solid #f3bb2f; !* couleur et épaisseur du bord *!*/
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 50px;
+    /*background-color: #f3bb2f;*/
+
+}
+
+.Container-WhyUs-right-content-x {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* <-- petit gap interne entre titre et paragraphe */
+    /*border-bottom: 1px solid #f3bb2f; !* couleur et épaisseur du bord *!*/
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 50px;
+    /*background-color: #f3bb2f;*/
+}
+
+.Container-WhyUs-right-title {
+    flex: 1 1 250px;
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    color: #f3bb2f;
+    font-weight: 700;
+    margin-bottom: 30px; /* <-- espace fixe entre titre et paragraphes */
+}
+
+.Container-WhyUs-right-paragraf {
+    flex: 2 1 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* <-- espace entre chaque paragraphe */
+}
+
+.Container-WhyUs-right-paragraf .icon-text {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.Container-WhyUs-right-paragraf .icon-text i {
+    font-size: 25px;
+    color: #f3bb2f;
+}
+
+.Container-WhyUs-right-paragraf .icon-text p {
+    margin: 0;
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    line-height: 1.5;
+}
+
+/* Media Queries */
+
+/* Tablettes */
+@media (max-width: 1000px) {
+    .Container-WhyUs {
+        padding: 50px 50px;
+        padding-bottom: 0px;
+        padding-top: 0px;
+
+    }
+    .Container-WhyUs-left {
+        flex: 1 1 45%;
+        max-width: 350px;
+    }
+    .Container-WhyUs-left h1 {
+        font-size: 48px;
+    }
+    .Container-WhyUs-right-title {
+        font-size: 22px;
+        margin-bottom: 20px; /* réduit un peu sur tablette */
+    }
+    .Container-WhyUs-right-paragraf .icon-text p {
+        font-size: 16px;
+    }
+}
+
+/* Mobiles */
+@media (max-width: 768px) {
+
+    .Container-WhyUs-right-title {
+        margin-bottom: 15px; /* réduit l'espace entre le titre et les paragraphes */
+        font-size: 20px;
+    }
+
+    .Container-WhyUs-right-paragraf {
+        gap: 30px; /* réduit l'espace entre chaque paragraphe */
+    }
+
+    .Container-WhyUs-right-paragraf .icon-text {
+        gap: 10px; /* réduit l'espace entre l'icône et le texte */
+    }
+}
+
