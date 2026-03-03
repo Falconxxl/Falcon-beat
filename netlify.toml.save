@@ -1,0 +1,6 @@
+[build]
+  base = "."          # le projet est à la racine du repo
+  publish = "build"   # dossier créé par npm run build
+  command = "npm run build"
+
+
