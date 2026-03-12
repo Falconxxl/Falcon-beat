@@ -1156,9 +1156,16 @@ body {
     }
 
     /* TÂCHE 2 - Logo centré en mobile */
+    /*.navbar-logo {*/
+    /*    position: absolute;*/
+    /*    left: 30%;*/
+    /*    transform: translateX(-50%);*/
+    /*}*/
+
+    /* TÂCHE 2 - Logo centré en mobile */
     .navbar-logo {
         position: absolute;
-        left: 30%;
+        left: 47%;
         transform: translateX(-50%);
     }
 

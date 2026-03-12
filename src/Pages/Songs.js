@@ -44,6 +44,10 @@ const beatsData = {
         { id: 89, title: 'Midnight Replay', producer: 'FalconXXL', genre: 'Soul', bpm: 91, audio: 'https://dl.dropboxusercontent.com/scl/fi/e8ppcqtsynf4o85g769ya/Midnight-Replay.mp3?rlkey=usyse2i9p8sankr6t2gzg16gh&raw=1' },
 
         { id: 57, title: 'Groove machine 2', producer: 'FalconXXL', genre: 'Electro', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/umszce0p0aqxcdozkv2qx/Groove-Machine-2-Remix-Edition-Instrumental.mp3?rlkey=e301q7wxa09h02v35vt7yqxt3', AirbitLink:"" },
+
+        { id: 58, title: 'Jenny V1', producer: 'FalconXXL', genre: 'Afro-Beat', bpm: 121, audio: 'https://dl.dropboxusercontent.com/scl/fi/upsl9ifexnn7yllk4ga3s/09.-Jenny-V1-Full-song.mp3?rlkey=bfrh6b3n3cym04m5qezt4lbq5&dl=1', AirbitLink:"" },
+
+        { id: 59, title: 'Jenny V2', producer: 'FalconXXL', genre: 'Afro-Beat', bpm: 121, audio: 'https://dl.dropboxusercontent.com/scl/fi/ubdinvr0xicpe74lg98uw/10.Jenny-V2.mp3?rlkey=bc9n012g42n32pf50rvpzppbs&dl=1', AirbitLink:"" },
     ],
 
     'French songs': [
@@ -88,6 +92,8 @@ const beatsData = {
         { id: 71, title: 'Amour Sous Les Toiles', producer: 'FalconXXL', genre: 'Zouk', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/6kue8uguiubpbk6ct0yoc/Amour-Sous-Les-toiles-2.mp3?rlkey=ddww52rwcp9liwn3y1g9vpe7a&raw=1' },
 
         { id: 72, title: 'Amour Sous Les Toiles 2', producer: 'FalconXXL', genre: 'Zouk', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/bi18tnvytur6i8k1ncu02/Amour-Sous-Les-toiles.mp3?rlkey=k6gywqhsh05xq1nmjaeevymrp&raw=1' },
+
+        { id: 73, title: 'Tant de Peines', producer: 'FalconXXL', genre: 'R&B', bpm: 168, audio: 'https://dl.dropboxusercontent.com/scl/fi/55s4ghwbv0rd73lao37a8/01-ILUNGA-Tant-De-peines-Ti-de-2.mp3?rlkey=himnr1xfgesojm4hbpcdsk3dq&dl=1' },
 
     ],
 

@@ -14,6 +14,13 @@ const beatsData = {
         { id: 3, title: 'Fly (Verssion 1)', producer: 'FalconXXL', genre: 'Hip-Hop', bpm: 157, audio: 'https://dl.dropboxusercontent.com/scl/fi/ob8ub7x1qxgddxsc8vqw2/Fly-2-Instrumental.mp3?rlkey=a26q6m5tpwx7b9u99e4tncwwm', AirbitLink:"" },
         { id: 4, title: 'Fly', producer: 'FalconXXL', genre: 'Hip-Hop', bpm: 157, audio: 'https://dl.dropboxusercontent.com/scl/fi/uwdgvdbpghoc7x7ridf3e/Fly-Instrumental.mp3?rlkey=cdm3c7mmubxn8xbdi35jb4was', AirbitLink:"https://airbit.com/FalconXXL/fly" },
         { id: 5, title: 'One shot', producer: 'FalconXXL', genre: 'Hip-Hop', bpm: 175, audio: 'https://dl.dropboxusercontent.com/scl/fi/dx429avx4ck50x7y9so88/One-shot.mp3?rlkey=k530ldkoi4bmt82ipvitcd32y', AirbitLink:"https://airbit.com/FalconXXL/one-shot" },
+        { id: 6, title: 'Game Over V1', producer: 'FalconXXL', genre: 'Hip-Hop', bpm: 130, audio: 'https://dl.dropboxusercontent.com/scl/fi/o9zxn1a96rtwzc0pye8p6/game-over-1.mp3?rlkey=ntpwodj5ja38ld7zk8xtqi2rc&dl=1', AirbitLink:"" },
+        { id: 7, title: 'Game Over V2', producer: 'FalconXXL', genre: 'Hip-Hop', bpm: 130, audio: 'https://dl.dropboxusercontent.com/scl/fi/nxp5j839xke3auzm3cpsd/game-over-2.mp3?rlkey=mq07xp6uijijw1qigf7yadrvu&dl=1', AirbitLink:"" },
+        { id: 8, title: 'Game Over V3', producer: 'FalconXXL', genre: 'Hip-Hop', bpm: 130, audio: 'https://www.dropbox.com/scl/fi/3g9lc5yb9u5nu108cvqyb/game-over-3.mp3?rlkey=hntcm82uz7cqy8jfunesoxnfv&st=ybl1law0&dl=0', AirbitLink:"" },
+        { id: 9, title: 'Avec les SS V1', producer: 'FalconXXL', genre: 'Hip-Hop', bpm: 143, audio: 'https://dl.dropboxusercontent.com/scl/fi/2u0vn8u8nagposyy790vn/01-18.-Histoire-Avec-les-streetsounds-Beat-Bonus-Instrumental.wav?rlkey=7hb2yhoco7xcdwxqiubafo8xm&st=554ucqvh&dl=1', AirbitLink:"" },
+        { id: 10, title: 'Avec les SS V2', producer: 'FalconXXL', genre: 'Hip-Hop', bpm: 143, audio: 'https://dl.dropboxusercontent.com/scl/fi/qj3qhphrnse410jj9jw5v/01-18.-Histoire-Avec-les-streetsounds-Beat-Bonus-Cover.mp3?rlkey=48bchbv1mszz4b7p0r0oue5w3&st=rz5xgqnw&dl=1', AirbitLink:"" },
+        { id: 11, title: 'Watch', producer: 'FalconXXL', genre: 'Hip-Hop', bpm: 175, audio: 'https://dl.dropboxusercontent.com/scl/fi/uao35snjhem759031318v/01-09.-Histoire-Watch-Ya-Kil-Rap-Instrumental.wav?rlkey=r7cx0ftsxdfh7et9rdyb0wegb&st=jox11gte&dl=1', AirbitLink:"" },
+        { id: 12, title: 'One shot', producer: 'FalconXXL', genre: 'Hip-Hop', bpm: 175, audio: '', AirbitLink:"" },
     ],
 
     'Hip-Hop (Melodic)': [
@@ -38,6 +45,10 @@ const beatsData = {
         { id: 13, title: 'Validé', producer: 'FalconXXL', genre: 'Afrobeat', bpm: 101, audio: 'https://dl.dropboxusercontent.com/scl/fi/qgivbbtxin2kkgqtohqr0/Valid-Demo-Cover-Instrumental.mp3?rlkey=cm80s23s48lsgpo9ijat8w4dq', AirbitLink:"https://airbit.com/FalconXXL/validate-1" },
         { id: 20, title: 'Love me now', producer: 'FalconXXL', genre: 'Afrobeat', bpm: 101, audio: 'https://dl.dropboxusercontent.com/scl/fi/700mltxpiof3yeo7stj67/Valid-Demo-2020-Cover-Instrumental.mp3?rlkey=i94tdg026s4nhzv2pk8wq4olc', AirbitLink:"" },
         { id: 21, title: 'Validate', producer: 'FalconXXL', genre: 'Afrobeat', bpm: 101, audio: 'https://dl.dropboxusercontent.com/scl/fi/9qnfqjc28sz1r0sca78da/Valid-Demo-3-Cover-Instrumental.mp3?rlkey=m6xumr88iu7cdkg6awxisznka', AirbitLink:"https://airbit.com/FalconXXL/validate-1" },
+        { id: 22, title: 'Jenny V1', producer: 'FalconXXL', genre: 'Afrobeat', bpm: 121, audio: 'https://dl.dropboxusercontent.com/scl/fi/t8vho396dusfjgvhvovpe/12.-Jenny-V4-Instrumental.wav?rlkey=h52rfq9mzydehx3wygd40d40a&dl=1', AirbitLink:" " },
+        { id: 23, title: 'Jenny V2', producer: 'FalconXXL', genre: 'Afrobeat', bpm: 121, audio: 'https://dl.dropboxusercontent.com/scl/fi/867rfgwiybb06mfrv2aas/11.-Jenny-v3-Instrumental.wav?rlkey=hrd5wibbrcc78q1jdtflyph9f&dl=1', AirbitLink:" " },
+        { id: 24, title: 'Jenny V3', producer: 'FalconXXL', genre: 'Afrobeat', bpm: 121, audio: 'https://dl.dropboxusercontent.com/scl/fi/uhr3shy62xh4d4jwhb97k/06.-Jenny-2-Instrumental.wav?rlkey=xg0o4shpyz3mci62zr6uu5ogq&dl=1', AirbitLink:" " },
+        { id: 25, title: 'Jenny V4', producer: 'FalconXXL', genre: 'Afrobeat', bpm: 121, audio: 'https://www.dropbox.com/scl/fi/d77w10quss2zkbdg8nges/09.-Jenny-Instrumental.wav?rlkey=h3bvcizmcbclvmb4uhfczzkqx&st=bkdmrhyt&dl=0', AirbitLink:" " },
     ],
 
     'Afrofusion': [
@@ -45,7 +56,7 @@ const beatsData = {
     ],
 
     'Amapiano / Afropiano': [
-        { id: 35, title: 'Piano Waves', producer: 'FalconXXL', genre: 'Amapiano', bpm: 115, audio: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3', AirbitLink:"" },
+
     ],
 
     'R&B (Contemporain)': [
@@ -57,6 +68,9 @@ const beatsData = {
     ],
 
     'R&B (Trap)': [
+        { id: 1, title: 'Tant De Peine V1', producer: 'FalconXXL', genre: 'R&B', bpm: 165, audio: 'https://dl.dropboxusercontent.com/scl/fi/mye89tcmw5j001zrpb3q1/01-ILUNGA-Tant-De-peines-Ti-de-2-Instrumental.wav?rlkey=smlx7d0wntctrp41l1n3o5r3w&dl=1', AirbitLink:"" },
+        { id: 2, title: 'Tant De Peine V2', producer: 'FalconXXL', genre: 'R&B', bpm: 165, audio: 'https://dl.dropboxusercontent.com/scl/fi/va0zfecbo2aegvf353r31/01-ILUNGA-Tant-De-peines-Ti-de-3-Instrumental.wav?rlkey=8cn1yk7inh4gyw2vs882myhfi&dl=1', AirbitLink:"" },
+        { id: 3, title: 'Tant De Peine V3', producer: 'FalconXXL', genre: 'R&B', bpm: 165, audio: 'https://dl.dropboxusercontent.com/scl/fi/vsce08fnkhhc5ke11cig5/01-ILUNGA-Tant-De-peines-Ti-de-best-Instrumental.wav?rlkey=czempaadz68y2s34e14cbtba3&dl=1', AirbitLink:"" },
     ],
 
     'R&B (Uptempo)': [
@@ -130,7 +144,8 @@ const beatsData = {
     ],
 
     'World Music': [
-        { id: 58, title: 'Classic', producer: 'FalconXXL', genre: 'Gospel', bpm: 82, audio: 'https://dl.dropboxusercontent.com/scl/fi/eco62d5fc5ylev6s9648h/Classic-Beat.mp3?rlkey=w6nlsl9106f122mid0vca5lv2', AirbitLink:"" },
+        { id: 1, title: 'Classic', producer: 'FalconXXL', genre: 'Gospel', bpm: 82, audio: 'https://dl.dropboxusercontent.com/scl/fi/eco62d5fc5ylev6s9648h/Classic-Beat.mp3?rlkey=w6nlsl9106f122mid0vca5lv2', AirbitLink:"" },
+        { id: 2, title: 'I m Sorry', producer: 'FalconXXL', genre: 'R&B', bpm: 165, audio: 'https://dl.dropboxusercontent.com/scl/fi/seqi5h3m0uciac1pe3uss/01-ILUNGA-Tant-De-peines-Ti-de-2-Cover-Instrumental.wav?rlkey=cxmelmcnfox7md0uhw8nb38fk&dl=1', AirbitLink:" " },
     ],
 };
 
