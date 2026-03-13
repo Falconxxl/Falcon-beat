@@ -48,6 +48,8 @@ const beatsData = {
         { id: 58, title: 'Jenny V1', producer: 'FalconXXL', genre: 'Afro-Beat', bpm: 121, audio: 'https://dl.dropboxusercontent.com/scl/fi/upsl9ifexnn7yllk4ga3s/09.-Jenny-V1-Full-song.mp3?rlkey=bfrh6b3n3cym04m5qezt4lbq5&dl=1', AirbitLink:"" },
 
         { id: 59, title: 'Jenny V2', producer: 'FalconXXL', genre: 'Afro-Beat', bpm: 121, audio: 'https://dl.dropboxusercontent.com/scl/fi/ubdinvr0xicpe74lg98uw/10.Jenny-V2.mp3?rlkey=bc9n012g42n32pf50rvpzppbs&dl=1', AirbitLink:"" },
+
+        { id: 60, title: 'Far Away V1', producer: 'FalconXXL', genre: 'Kizomba', bpm: 90, audio: 'https://dl.dropboxusercontent.com/scl/fi/t1utpjk3iycayosp158ht/far-away-beat-oct-3-1.mp3?rlkey=25bo50xo2n41yqikvqqxl4mkb&raw=1', AirbitLink:"" },
     ],
 
     'French songs': [
@@ -178,6 +180,8 @@ const beatsData = {
     ],
 
     'Kizomba': [
+
+
 
     ],
 

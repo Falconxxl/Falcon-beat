@@ -107,9 +107,11 @@ const beatsData = {
         { id: 29, title: 'On emménage', producer: 'FalconXXL', genre: 'Zouk', bpm: 95, audio: 'https://dl.dropboxusercontent.com/scl/fi/1yrlu62zqq0541fkk8vwt/On-emm-nage-demain-Version-2-Instrumental.mp3?rlkey=yayl8bf9e7oz30pl1835beme1', AirbitLink:"https://airbit.com/FalconXXL/on-emmenage" },
         { id: 30, title: 'Sous la lune', producer: 'FalconXXL', genre: 'Zouk', bpm: 95, audio: 'https://dl.dropboxusercontent.com/scl/fi/78nj2qcqczx03ydkze68t/Sous-la-Lune-Instrumental.mp3?rlkey=yp62wva8u80r9nv131l1e4ss7', AirbitLink:"" },
         { id: 31, title: 'Sous les étoiles', producer: 'FalconXXL', genre: 'Zouk', bpm: 95, audio: 'https://dl.dropboxusercontent.com/scl/fi/ddiuwsrmh7wbkx9j28loi/Sous-Les-toiles-Instrumental.mp3?rlkey=t76dft2s2lko8cn1h14j8stc3', AirbitLink:"" },
+        { id: 32, title: 'Far Away V1', producer: 'FalconXXL', genre: 'Kizomba', bpm: 90, audio: 'https://dl.dropboxusercontent.com/scl/fi/fru9c9dqqhjiuycsscbe8/far-away-beat-v1.mp3?rlkey=5dmebh9t6xjf8h2z6ae0zz3iv&raw=1', AirbitLink:"" },
     ],
     'Kizomba': [
         { id: 32, title: 'Juste une dance', producer: 'FalconXXL', genre: 'Kizomba', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/nsnlb60inclricbip9788/Juste-Une-Danse.mp3?rlkey=8v08ku2bamb000k78nd0oji32', AirbitLink:"https://airbit.com/FalconXXL/juste-une-danse" },
+        { id: 33, title: 'Far Away V1', producer: 'FalconXXL', genre: 'Kizomba', bpm: 90, audio: 'https://dl.dropboxusercontent.com/scl/fi/fru9c9dqqhjiuycsscbe8/far-away-beat-v1.mp3?rlkey=5dmebh9t6xjf8h2z6ae0zz3iv&raw=1', AirbitLink:"" },
     ],
 
     'Reggaeton': [
