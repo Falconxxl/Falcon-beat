@@ -475,7 +475,7 @@ function Beat() {
 
         <>
             <Helmet>
-                <title>Falcon Beats – Professional Beats for Artists | FalconXXL</title>
+                <title>Falcon Beats – Professional Beats for Artists | NEXTECLAT</title>
                 <meta name="description" content="Falcon Beats is the platform dedicated to artists looking for professional, high-quality beats. Listen, choose and purchase instrumentals from Hip-Hop, R&B, Afrobeats, Zouk and more — accessible worldwide at an affordable price." />
                 <link rel="canonical" href="https://www.falconbeat.nl/" />
             </Helmet>
@@ -559,12 +559,12 @@ function Beat() {
                         </NavLink>
 
                         <a
-                            href="https://www.falconxxl.com"
+                            href="https://www.nexteclat.com"
                             target="_blank"
                             rel="noopener noreferrer"
                            className="navbar-link active"
                         >
-                            FalconXXL
+                            Nexteclat
                         </a>
                     </div>
 
@@ -597,7 +597,7 @@ function Beat() {
                         <NavLink to="/Collab" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Collab</NavLink>
                         {/*<NavLink to="/Faq" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>FAQ</NavLink>*/}
                         <NavLink to="/Contact" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
-                        <a href="https://www.falconxxl.com" className="mobile-menu-link mobile-menu-link-special" onClick={() => setMobileMenuOpen(false)}>FalconXXL</a>
+                        <a href="https://www.nexteclat.com" className="mobile-menu-link mobile-menu-link-special" onClick={() => setMobileMenuOpen(false)}>Nexteclat</a>
                     </div>
                 </div>
             </nav>

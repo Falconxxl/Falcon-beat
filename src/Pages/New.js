@@ -537,11 +537,11 @@ function New() {
                         </NavLink>
 
                         <a
-                            href="https://www.falconxxl.com"
+                            href="https://www.nexteclat.com"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="navbar-link active">
-                            FalconXXL
+                            Nexteclat
                         </a>
                     </div>
 
@@ -574,7 +574,7 @@ function New() {
                         <NavLink to="/Collab" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Collab</NavLink>
                         {/*<NavLink to="/Faq" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>FAQ</NavLink>*/}
                         <NavLink to="/Contact" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
-                        <a href="https://www.falconxxl.com" className="mobile-menu-link mobile-menu-link-special" onClick={() => setMobileMenuOpen(false)}>FalconXXL</a>
+                        <a href="https://www.nexteclat.com" className="mobile-menu-link mobile-menu-link-special" onClick={() => setMobileMenuOpen(false)}>nexteclat</a>
                     </div>
                 </div>
             </nav>

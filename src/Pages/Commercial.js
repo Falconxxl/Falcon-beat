@@ -427,10 +427,10 @@ function Commercial() {
                             Contact
                         </NavLink>
 
-                        <a href="https://www.falconxxl.com"
+                        <a href="https://www.nexteclat.com"
                            target="_blank"
                            rel="noopener noreferrer"
-                           className="navbar-link active">FalconXXL</a>
+                           className="navbar-link active">Nexteclat</a>
                     </div>
 
                     <SocialIcons />
@@ -462,7 +462,7 @@ function Commercial() {
                         <NavLink to="/Collab" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Collab</NavLink>
                         {/*<NavLink to="/Faq" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>FAQ</NavLink>*/}
                         <NavLink to="/Contact" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
-                        <a href="https://www.falconxxl.com" className="mobile-menu-link mobile-menu-link-special" onClick={() => setMobileMenuOpen(false)}>FalconXXL</a>
+                        <a href="https://www.nexteclat.com" className="mobile-menu-link mobile-menu-link-special" onClick={() => setMobileMenuOpen(false)}>Nexteclat</a>
                     </div>
                 </div>
             </nav>
@@ -659,8 +659,8 @@ function Commercial() {
                             </div>
 
                             <div className="player-copyright" style={{color:"white"}}>
-                                Website developed by FALCON-XXL
-                                2026 FALCON-XXL | All rights are reserved
+                                Website developed by NEXTECLAT-XXL
+                                2026 NEXTECLAT-XXL | All rights are reserved
                             </div>
                         </div>
 

@@ -61,8 +61,8 @@ function Collab() {
 
         <>
             <Helmet>
-                <title>Collaborate with FalconXXL – Music Production | Falcon Beats</title>
-                <meta name="description" content="Looking to collaborate? FalconXXL works with artists, labels and content creators worldwide. Let's create something together." />
+                <title>Collaborate with Nexteclat – Music Production | Falcon Beats</title>
+                <meta name="description" content="Looking to collaborate? NEXTECLAT works with artists, labels and content creators worldwide. Let's create something together." />
                 <link rel="canonical" href="https://www.falconbeat.nl/Collab" />
             </Helmet>
 
@@ -112,7 +112,7 @@ function Collab() {
 
                         <NavLink to="/Contact" className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}>Contact</NavLink>
 
-                        <a href="https://www.falconxxl.com" className="navbar-link active">FalconXXL</a>
+                        <a href="https://www.nexteclat.com" className="navbar-link active">Nexteclat</a>
                     </div>
 
                     <SocialIcons />
@@ -144,7 +144,7 @@ function Collab() {
                         <NavLink to="/Collab" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Collab</NavLink>
                         {/*<NavLink to="/Faq" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>FAQ</NavLink>*/}
                         <NavLink to="/Contact" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
-                        <a href="https://www.falconxxl.com" className="mobile-menu-link mobile-menu-link-special" onClick={() => setMobileMenuOpen(false)}>FalconXXL</a>
+                        <a href="https://www.nexteclat.com" className="mobile-menu-link mobile-menu-link-special" onClick={() => setMobileMenuOpen(false)}>Nexteclat</a>
                     </div>
                 </div>
             </nav>

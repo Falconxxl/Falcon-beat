@@ -32,13 +32,13 @@ function Footer() {
                     <div className="Container-Footer-links-details">
                         <h className="Footer-title">Links</h>
                         <a
-                            href="https://www.falconxxl.com"
+                            href="https://www.nexteclat.com"
                             target="_blank"
                             style={{color:"#f3bb2f"}}
                             rel="noopener noreferrer"
                             className="Footer-links"
                         >
-                            FalconXXL
+                            NEXTECLAT
                         </a>
                     </div>
 
@@ -47,7 +47,7 @@ function Footer() {
                         <p className="Footer-title-details">Tel:</p>
                         <p className="Footer-title-details-small">+31685533124 (Netherlands)</p>
                         <p className="Footer-title-details">Email:</p>
-                        <p className="Footer-title-details-small">falconxxl.mail@gmail.com</p>
+                        <p className="Footer-title-details-small">nexteclat.info@gmail.com</p>
                     </div>
 
                 </div>
@@ -56,7 +56,7 @@ function Footer() {
                     <h className="Footer-title">Social media</h>
                     <div className="Footer-SocialMedia">
                         <a
-                            href="https://www.instagram.com/falconxxl.media?igsh=ZWxsZ2t4djFoNTll&utm_source=qr"
+                            href="https://www.instagram.com/nexteclat.digital?igsh=dGlzeW1hMmEwbm5t&utm_source=qr"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="Footer-SocialMedia-icon"
@@ -66,7 +66,7 @@ function Footer() {
                         </a>
 
                         <a
-                            href="https://www.youtube.com/@falcon-xxl"
+                            href="https://youtube.com/@nexteclat?si=JwEO3lzG5odxCku_"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="Footer-SocialMedia-icon"
@@ -76,7 +76,7 @@ function Footer() {
                         </a>
 
                         <a
-                            href="https://www.tiktok.com/@falconxxl2.0?_r=1&_t=ZG-92fGBLUC3Yu"
+                            href="https://www.tiktok.com/@nexteclat.digital?_r=1&_t=ZG-95SJ0Xoz2tk"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="Footer-SocialMedia-icon"
@@ -86,7 +86,7 @@ function Footer() {
                         </a>
 
                         <a
-                            href="https://www.behance.net/falconxxl"
+                            href="https://www.behance.net/michealilunga"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="Footer-SocialMedia-icon"
@@ -97,7 +97,7 @@ function Footer() {
 
 
                         <a
-                            href="https://dribbble.com/falconxxl-mail"
+                            href="https://dribbble.com/nexteclat-info"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="Footer-SocialMedia-icon"
@@ -107,7 +107,7 @@ function Footer() {
                         </a>
 
                         <a
-                            href="https://www.linkedin.com/company/110433729/admin/dashboard"
+                            href="https://www.linkedin.com/company/nexteclat/about/?viewAsMember=true"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="Footer-SocialMedia-icon"
@@ -129,7 +129,7 @@ function Footer() {
 
 
                         <a
-                            href="https://x.com/falconxxl20?s=11"
+                            href="https://x.com/nexteclat?s=21"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="Footer-SocialMedia-icon"
@@ -144,9 +144,9 @@ function Footer() {
 
             <div className="Container-Footer-content2">
                 <p>
-                    Website developed by <strong>FALCON-XXL</strong><br/>
+                    Website developed by <strong>NEXTECLAT</strong><br/>
                     <i className="fa-regular fa-copyright"></i>&nbsp;
-                    2026 <strong>FALCON-XXL</strong> | All rights are reserved
+                    2026 <strong>NEXTECLAT</strong> | All rights are reserved
                 </p>
             </div>
         </div>

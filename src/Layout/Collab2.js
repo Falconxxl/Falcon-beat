@@ -298,10 +298,10 @@ const Collab2 = () => {
             {/* Section Falcon XXL */}
             <section className="falcon-xxl-section">
                 <div className="collab-container">
-                    <h2><span>Falcon XXL</span> La société mère</h2>
+                    <h2><span>NEXTECLAT</span> La société mère</h2>
                     <p className="falcon-xxl-description">
-                        Saviez-vous que <strong>Falcon Beats</strong> fait partie de <strong>Falcon Double XL</strong>,
-                        notre société mère ? Chez Falcon Double XL, nous proposons des services premium pour les artistes,
+                        Saviez-vous que <strong>Falcon Beats</strong> fait partie de <strong>NEXTECLAT</strong>,
+                        notre société mère ? Chez NEXTECLAT, nous proposons des services premium pour les artistes,
                         notamment :
                     </p>
                     <div className="falcon-xxl-services">

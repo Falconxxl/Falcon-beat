@@ -82,7 +82,7 @@ function About() {
                         {/*<NavLink style={{color: "#f3bb2f"}} to="/About" className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}>About</NavLink>*/}
                         <NavLink to="/Collab" className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}>Collab</NavLink>
                         <NavLink to="/Contact" className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}>Contact</NavLink>
-                        <a href="https://www.falconxxl.com" className="navbar-link active">FalconXXL</a>
+                        <a href="https://www.nexteclat.com" className="navbar-link active">Nexteclat</a>
                     </div>
 
                     <SocialIcons />
@@ -116,13 +116,13 @@ function About() {
                         <NavLink to="/Contact" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
 
                         <a
-                            href="https://www.falconxxl.com"
+                            href="https://www.nexteclat.com"
                             target="_blank"
                             rel="noopener noreferrer"
                            className="mobile-menu-link mobile-menu-link-special"
                            // onClick={() => setMobileMenuOpen(false)}
                         >
-                            FalconXXL
+                            Nexteclat
                         </a>
                     </div>
                 </div>

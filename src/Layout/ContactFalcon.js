@@ -221,7 +221,7 @@ function ContactFalcon() {
 
                     <div className="line-contact-info"></div>
 
-                    <h1 className="title-info-contact">Questions? Ask our FalconXXL team</h1>
+                    <h1 className="title-info-contact">Questions? Ask our Nexteclat team</h1>
 
                     <div className="contact-info-CallMail">
                         <i className="fa-solid fa-phone fa-3x"></i>
@@ -229,12 +229,12 @@ function ContactFalcon() {
                     </div>
                     <div className="contact-info-CallMail">
                         <i className="fa-solid fa-envelope fa-3x"></i>
-                        <p><strong style={{color:"#f3bb2f"}}>E-mail us : </strong> falconxxl.mail@gmail.com</p>
+                        <p><strong style={{color:"#f3bb2f"}}>E-mail us : </strong> nexteclat.info@gmail.com</p>
                     </div>
 
                     <div className="contact-social-media">
                         <a
-                            href="https://www.instagram.com/falconxxl.media?igsh=ZWxsZ2t4djFoNTll&utm_source=qr"
+                            href="https://www.instagram.com/nexteclat.digital?igsh=dGlzeW1hMmEwbm5t&utm_source=qr"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="Footer-SocialMedia-icon"
@@ -244,7 +244,7 @@ function ContactFalcon() {
                         </a>
 
                         <a
-                            href="https://www.tiktok.com/@falconxxl2.0?_r=1&_t=ZG-92fGBLUC3Yu"
+                            href="https://www.tiktok.com/@nexteclat.digital?_r=1&_t=ZG-95SJ0Xoz2tk"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="Footer-SocialMedia-icon"
@@ -254,7 +254,7 @@ function ContactFalcon() {
                         </a>
 
                         <a
-                            href="https://www.linkedin.com/company/110433729"
+                            href="https://www.linkedin.com/company/nexteclat/about/?viewAsMember=true"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="Footer-SocialMedia-icon"

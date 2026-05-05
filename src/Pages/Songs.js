@@ -9,114 +9,114 @@ import {Helmet} from "react-helmet-async";
 // ==================== CMS - BEATS MANAGEMENT ====================
 const beatsData = {
     'English songs': [
-        { id: 70, title: 'In Your Head', producer: 'FalconXXL', genre: 'Dance', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/x6gyra6r6h4nnew61hfqw/AI-Songwriter-In-Your-Head.mp3?rlkey=5bxg7jmsibu9om1g1xtnn7dq9&raw=1' },
-
-        { id: 65, title: 'There Is The Door', producer: 'FalconXXL', genre: 'Slow jam', bpm: 114, audio: 'https://dl.dropboxusercontent.com/scl/fi/9sf48w0zf7c6tsdfd2phd/18.-Urban-Love-There-is-the-door-feat.-Bentley-3-Cover.mp3?rlkey=mbrqbz1sjkar10v5ablvd73ow&raw=1' },
-
-        { id: 73, title: 'Baby girl', producer: 'FalconXXL', genre: 'R&B', bpm: 91, audio: 'https://dl.dropboxusercontent.com/scl/fi/fcyzqtls1kuiliki72a1z/Babygirl-2.mp3?rlkey=1w3j7eqs55lpgltuy7cdf0rql&raw=1' },
-
-        { id: 74, title: 'Baby girl (Remix)', producer: 'FalconXXL', genre: 'R&B', bpm: 91, audio: 'https://dl.dropboxusercontent.com/scl/fi/tscra6hd2ommgi8qv1bid/Babygirl.mp3?rlkey=u05f6j84xf2ku58ot4isqp2pr&raw=1' },
-
-        { id: 75, title: 'Beat The Feeling (Version 1)', producer: 'FalconXXL', genre: 'Dance', bpm: 123, audio: 'https://dl.dropboxusercontent.com/scl/fi/7o1rt1t6o7fu47mkq3lp0/Beat-The-Feeling-Version-1-Female-vocals.mp3?rlkey=8mvp1fc663e1vbomrj0clqkho&raw=1' },
-
-        { id: 76, title: 'Beat The Feeling (Version 2)', producer: 'FalconXXL', genre: 'Dance', bpm: 123, audio: 'https://dl.dropboxusercontent.com/scl/fi/d3dv8mqgl16dbvhjv6vd0/Beat-The-Feeling-Version-2-Male-vocals-1.mp3?rlkey=nxsgzt2m7nhvj0728cl71aj6e&raw=1' },
-
-        { id: 77, title: 'Beat The Feeling (Version 2)', producer: 'FalconXXL', genre: 'Dance', bpm: 123, audio: 'https://dl.dropboxusercontent.com/scl/fi/cephz4za08zw8z91jsvn9/Beat-the-feeling-4.mp3?rlkey=65kzeo9ip5j8mxz8katphjruo&raw=1' },
-
-        { id: 82, title: 'Fly - S. Lopes', producer: 'FalconXXL', genre: 'Hip-hop', bpm: 155, audio: 'https://dl.dropboxusercontent.com/scl/fi/jwpesuhmyfzvepieaaig1/Fly-2.mp3?rlkey=047tuc8jz066dtpjpzzjtfo1p&raw=1' },
-
-        { id: 83, title: 'Fly (Version 2)', producer: 'FalconXXL', genre: 'Hip-hop', bpm: 155, audio: 'https://dl.dropboxusercontent.com/scl/fi/cjyfdiunjkx3xsf1mql3x/Fly.mp3?rlkey=s7lp1udp19hwpf7we6teot615&raw=1' },
-
-        { id: 84, title: 'Groove Machine', producer: 'FalconXXL', genre: 'Dance', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/0pjblpolbojmdnvzuca0e/Groove-Machine-Remix-Edition.mp3?rlkey=3q9syxz6vj8bb8h5x60ik9ypz&raw=1' },
-
-        { id: 85, title: 'Groove Machine (Version 2)', producer: 'FalconXXL', genre: 'Dance', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/vu23y4b6g34s07xw8jxnm/Groove-Machine-2-Remix-Edition.mp3?rlkey=55dcg9vebz3jl3r2pkjbeqdfv&raw=1' },
-
-        { id: 104, title: 'Velvet Glow', producer: 'FalconXXL', genre: 'R&B Slow', bpm: 159, audio: 'https://dl.dropboxusercontent.com/scl/fi/hq4snkjk9sit8igl1q5x3/Velvet-Glow.mp3?rlkey=cxkwbl9xpjepfo3x78h3alfro&raw=1' },
-
-        { id: 97, title: 'Caught Up V1', producer: 'FalconXXL', genre: 'R&B', bpm: 101, audio: 'https://dl.dropboxusercontent.com/scl/fi/4wnrw3maps4fh6yiym4tf/SENECA-DE-DON-Caught-Up-Feat.-ILUNGA-Cover-2.mp3?rlkey=nvacr806qr0ehraw6rwb7jmwj&raw=1' },
-
-        { id: 98, title: 'Caught Up V2', producer: 'FalconXXL', genre: 'R&B', bpm: 101, audio: 'https://dl.dropboxusercontent.com/scl/fi/a7zbzopvw4lh3p2477yye/SENECA-DE-DON-Caught-Up-Feat.-ILUNGA-Cover.mp3?rlkey=syz094m3gq4lv5t48k06w5n2b&raw=1' },
-
-        { id: 87, title: 'Midnight Glow 2', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 95, audio: 'https://dl.dropboxusercontent.com/scl/fi/ynpvr50f3bdqeyeylgwz4/Midnight-Glow-2.mp3?rlkey=92krdf6fiyy9uf2ve4nvni3r5&raw=1' },
-
-        { id: 88, title: 'Midnight Glow', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 95, audio: 'https://dl.dropboxusercontent.com/scl/fi/vfscho7ay01niugytuvkd/Midnight-Glow.mp3?rlkey=5v0idqpvdsdmkbtz2u28nzmzq&raw=1' },
-
-        { id: 89, title: 'Midnight Replay', producer: 'FalconXXL', genre: 'Soul', bpm: 91, audio: 'https://dl.dropboxusercontent.com/scl/fi/e8ppcqtsynf4o85g769ya/Midnight-Replay.mp3?rlkey=usyse2i9p8sankr6t2gzg16gh&raw=1' },
-
-        { id: 57, title: 'Groove machine 2', producer: 'FalconXXL', genre: 'Electro', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/umszce0p0aqxcdozkv2qx/Groove-Machine-2-Remix-Edition-Instrumental.mp3?rlkey=e301q7wxa09h02v35vt7yqxt3', AirbitLink:"" },
-
-        { id: 58, title: 'Jenny V1', producer: 'FalconXXL', genre: 'Afro-Beat', bpm: 121, audio: 'https://dl.dropboxusercontent.com/scl/fi/upsl9ifexnn7yllk4ga3s/09.-Jenny-V1-Full-song.mp3?rlkey=bfrh6b3n3cym04m5qezt4lbq5&dl=1', AirbitLink:"" },
-
-        { id: 59, title: 'Jenny V2', producer: 'FalconXXL', genre: 'Afro-Beat', bpm: 121, audio: 'https://dl.dropboxusercontent.com/scl/fi/ubdinvr0xicpe74lg98uw/10.Jenny-V2.mp3?rlkey=bc9n012g42n32pf50rvpzppbs&dl=1', AirbitLink:"" },
-
-        { id: 60, title: 'Far Away V1', producer: 'FalconXXL', genre: 'Kizomba', bpm: 90, audio: 'https://dl.dropboxusercontent.com/scl/fi/t1utpjk3iycayosp158ht/far-away-beat-oct-3-1.mp3?rlkey=25bo50xo2n41yqikvqqxl4mkb&raw=1', AirbitLink:"" },
+    //     { id: 70, title: 'In Your Head', producer: 'FalconXXL', genre: 'Dance', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/x6gyra6r6h4nnew61hfqw/AI-Songwriter-In-Your-Head.mp3?rlkey=5bxg7jmsibu9om1g1xtnn7dq9&raw=1' },
+    //
+    //     { id: 65, title: 'There Is The Door', producer: 'FalconXXL', genre: 'Slow jam', bpm: 114, audio: 'https://dl.dropboxusercontent.com/scl/fi/9sf48w0zf7c6tsdfd2phd/18.-Urban-Love-There-is-the-door-feat.-Bentley-3-Cover.mp3?rlkey=mbrqbz1sjkar10v5ablvd73ow&raw=1' },
+    //
+    //     { id: 73, title: 'Baby girl', producer: 'FalconXXL', genre: 'R&B', bpm: 91, audio: 'https://dl.dropboxusercontent.com/scl/fi/fcyzqtls1kuiliki72a1z/Babygirl-2.mp3?rlkey=1w3j7eqs55lpgltuy7cdf0rql&raw=1' },
+    //
+    //     { id: 74, title: 'Baby girl (Remix)', producer: 'FalconXXL', genre: 'R&B', bpm: 91, audio: 'https://dl.dropboxusercontent.com/scl/fi/tscra6hd2ommgi8qv1bid/Babygirl.mp3?rlkey=u05f6j84xf2ku58ot4isqp2pr&raw=1' },
+    //
+    //     { id: 75, title: 'Beat The Feeling (Version 1)', producer: 'FalconXXL', genre: 'Dance', bpm: 123, audio: 'https://dl.dropboxusercontent.com/scl/fi/7o1rt1t6o7fu47mkq3lp0/Beat-The-Feeling-Version-1-Female-vocals.mp3?rlkey=8mvp1fc663e1vbomrj0clqkho&raw=1' },
+    //
+    //     { id: 76, title: 'Beat The Feeling (Version 2)', producer: 'FalconXXL', genre: 'Dance', bpm: 123, audio: 'https://dl.dropboxusercontent.com/scl/fi/d3dv8mqgl16dbvhjv6vd0/Beat-The-Feeling-Version-2-Male-vocals-1.mp3?rlkey=nxsgzt2m7nhvj0728cl71aj6e&raw=1' },
+    //
+    //     { id: 77, title: 'Beat The Feeling (Version 2)', producer: 'FalconXXL', genre: 'Dance', bpm: 123, audio: 'https://dl.dropboxusercontent.com/scl/fi/cephz4za08zw8z91jsvn9/Beat-the-feeling-4.mp3?rlkey=65kzeo9ip5j8mxz8katphjruo&raw=1' },
+    //
+    //     { id: 82, title: 'Fly - S. Lopes', producer: 'FalconXXL', genre: 'Hip-hop', bpm: 155, audio: 'https://dl.dropboxusercontent.com/scl/fi/jwpesuhmyfzvepieaaig1/Fly-2.mp3?rlkey=047tuc8jz066dtpjpzzjtfo1p&raw=1' },
+    //
+    //     { id: 83, title: 'Fly (Version 2)', producer: 'FalconXXL', genre: 'Hip-hop', bpm: 155, audio: 'https://dl.dropboxusercontent.com/scl/fi/cjyfdiunjkx3xsf1mql3x/Fly.mp3?rlkey=s7lp1udp19hwpf7we6teot615&raw=1' },
+    //
+    //     { id: 84, title: 'Groove Machine', producer: 'FalconXXL', genre: 'Dance', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/0pjblpolbojmdnvzuca0e/Groove-Machine-Remix-Edition.mp3?rlkey=3q9syxz6vj8bb8h5x60ik9ypz&raw=1' },
+    //
+    //     { id: 85, title: 'Groove Machine (Version 2)', producer: 'FalconXXL', genre: 'Dance', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/vu23y4b6g34s07xw8jxnm/Groove-Machine-2-Remix-Edition.mp3?rlkey=55dcg9vebz3jl3r2pkjbeqdfv&raw=1' },
+    //
+    //     { id: 104, title: 'Velvet Glow', producer: 'FalconXXL', genre: 'R&B Slow', bpm: 159, audio: 'https://dl.dropboxusercontent.com/scl/fi/hq4snkjk9sit8igl1q5x3/Velvet-Glow.mp3?rlkey=cxkwbl9xpjepfo3x78h3alfro&raw=1' },
+    //
+    //     { id: 97, title: 'Caught Up V1', producer: 'FalconXXL', genre: 'R&B', bpm: 101, audio: 'https://dl.dropboxusercontent.com/scl/fi/4wnrw3maps4fh6yiym4tf/SENECA-DE-DON-Caught-Up-Feat.-ILUNGA-Cover-2.mp3?rlkey=nvacr806qr0ehraw6rwb7jmwj&raw=1' },
+    //
+    //     { id: 98, title: 'Caught Up V2', producer: 'FalconXXL', genre: 'R&B', bpm: 101, audio: 'https://dl.dropboxusercontent.com/scl/fi/a7zbzopvw4lh3p2477yye/SENECA-DE-DON-Caught-Up-Feat.-ILUNGA-Cover.mp3?rlkey=syz094m3gq4lv5t48k06w5n2b&raw=1' },
+    //
+    //     { id: 87, title: 'Midnight Glow 2', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 95, audio: 'https://dl.dropboxusercontent.com/scl/fi/ynpvr50f3bdqeyeylgwz4/Midnight-Glow-2.mp3?rlkey=92krdf6fiyy9uf2ve4nvni3r5&raw=1' },
+    //
+    //     { id: 88, title: 'Midnight Glow', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 95, audio: 'https://dl.dropboxusercontent.com/scl/fi/vfscho7ay01niugytuvkd/Midnight-Glow.mp3?rlkey=5v0idqpvdsdmkbtz2u28nzmzq&raw=1' },
+    //
+    //     { id: 89, title: 'Midnight Replay', producer: 'FalconXXL', genre: 'Soul', bpm: 91, audio: 'https://dl.dropboxusercontent.com/scl/fi/e8ppcqtsynf4o85g769ya/Midnight-Replay.mp3?rlkey=usyse2i9p8sankr6t2gzg16gh&raw=1' },
+    //
+    //     { id: 57, title: 'Groove machine 2', producer: 'FalconXXL', genre: 'Electro', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/umszce0p0aqxcdozkv2qx/Groove-Machine-2-Remix-Edition-Instrumental.mp3?rlkey=e301q7wxa09h02v35vt7yqxt3', AirbitLink:"" },
+    //
+    //     { id: 58, title: 'Jenny V1', producer: 'FalconXXL', genre: 'Afro-Beat', bpm: 121, audio: 'https://dl.dropboxusercontent.com/scl/fi/upsl9ifexnn7yllk4ga3s/09.-Jenny-V1-Full-song.mp3?rlkey=bfrh6b3n3cym04m5qezt4lbq5&dl=1', AirbitLink:"" },
+    //
+    //     { id: 59, title: 'Jenny V2', producer: 'FalconXXL', genre: 'Afro-Beat', bpm: 121, audio: 'https://dl.dropboxusercontent.com/scl/fi/ubdinvr0xicpe74lg98uw/10.Jenny-V2.mp3?rlkey=bc9n012g42n32pf50rvpzppbs&dl=1', AirbitLink:"" },
+    //
+    //     { id: 60, title: 'Far Away V1', producer: 'FalconXXL', genre: 'Kizomba', bpm: 90, audio: 'https://dl.dropboxusercontent.com/scl/fi/t1utpjk3iycayosp158ht/far-away-beat-oct-3-1.mp3?rlkey=25bo50xo2n41yqikvqqxl4mkb&raw=1', AirbitLink:"" },
     ],
 
     'French songs': [
-        { id: 71, title: 'Amour Sous Les Toiles', producer: 'FalconXXL', genre: 'Zouk', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/6kue8uguiubpbk6ct0yoc/Amour-Sous-Les-toiles-2.mp3?rlkey=ddww52rwcp9liwn3y1g9vpe7a&raw=1' },
-
-        { id: 72, title: 'Amour Sous Les Toiles 2', producer: 'FalconXXL', genre: 'Zouk', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/bi18tnvytur6i8k1ncu02/Amour-Sous-Les-toiles.mp3?rlkey=k6gywqhsh05xq1nmjaeevymrp&raw=1' },
-
-        { id: 78, title: 'Cherie Coco', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 100, audio: 'https://dl.dropboxusercontent.com/scl/fi/9towdl2wuzimluikoe497/cherie-coco-Cover.mp3?rlkey=qgzqkm69esrae3ilt0flu6fff&raw=1' },
-
-        { id: 79, title: 'Cherie Coco (Version)', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 100, audio: 'https://dl.dropboxusercontent.com/scl/fi/omwbmszagn29446c2u091/cherie-coco-2-Cover.mp3?rlkey=yieufyjx7u4z5lss8927g5ymh&raw=1' },
-
-        { id: 81, title: 'Comment Franchir Cette Étape', producer: 'Slow jam', genre: 'Various', bpm: 112, audio: 'https://dl.dropboxusercontent.com/scl/fi/317rbjwmgjaz0rfqmum4v/Comment-franchir-cette-tape.mp3?rlkey=3e19bbj94g89vuspzxnyth0ms&raw=1' },
-
-        { id: 99, title: 'Sous La Lune', producer: 'FalconXXL', genre: 'Zouk', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/cq24x0mql7yragw6kzren/Sous-la-Lune.mp3?rlkey=2cbyv75sggs544kk1ksxxai3c&raw=1' },
-
-        { id: 100, title: 'Sous Les Toiles', producer: 'FalconXXL', genre: 'Zouk', bpm: 85, audio: 'https://dl.dropboxusercontent.com/scl/fi/t4imm35k6s01apo4pbr90/Sous-Les-toiles.mp3?rlkey=7ez97txuk0wbsggdf2zbc8qg8&raw=1' },
-
-        { id: 101, title: 'Validé', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 100, audio: 'https://dl.dropboxusercontent.com/scl/fi/7nuwadrlf8mkrmg2qvrt4/Valid-Demo-Cover.mp3?rlkey=k3z0mb73ia7013pcje6fffqj6&raw=1' },
-
-        { id: 102, title: 'Validé V2', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 100, audio: 'https://dl.dropboxusercontent.com/scl/fi/s4vswtcnrwuwhegkvoz8m/Valid-Demo-2020-Cover.mp3?rlkey=ks8kqu3cee6ra9o75fif51z6f&raw=1' },
-
-        { id: 103, title: 'Validé V3', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 100, audio: 'https://dl.dropboxusercontent.com/scl/fi/2kcv5szwged7xfn64qg93/Valid-Demo-3-Cover.mp3?rlkey=z6es3y9cnxt0mcam2shu3vr5p&raw=1' },
-
-        { id: 79, title: 'Cherie Coco (Version)', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 100, audio: 'https://dl.dropboxusercontent.com/scl/fi/omwbmszagn29446c2u091/cherie-coco-2-Cover.mp3?rlkey=yieufyjx7u4z5lss8927g5ymh&raw=1' },
-
-        { id: 81, title: 'Comment Franchir Cette Étape', producer: 'Slow jam', genre: 'Various', bpm: 112, audio: 'https://dl.dropboxusercontent.com/scl/fi/317rbjwmgjaz0rfqmum4v/Comment-franchir-cette-tape.mp3?rlkey=3e19bbj94g89vuspzxnyth0ms&raw=1' },
-
-        { id: 86, title: 'Le silences me Parle', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 99, audio: 'https://dl.dropboxusercontent.com/scl/fi/pdahuix2aj86pzopamjr2/Les-Silences-Me-Parlent.mp3?rlkey=9xr9upr8sjn9fsaodv3fdzf87&raw=1' },
-
-        { id: 91, title: 'Nuit Sans Fin 2', producer: 'FalconXXL', genre: 'Zouk', bpm: 74, audio: 'https://dl.dropboxusercontent.com/scl/fi/xdxvg1y9f3y25qsorry6z/Nuit-Sans-Fin-2.mp3?rlkey=j49lowa06f4fypge9kk510ofg&raw=1' },
-
-        { id: 92, title: 'Nuit Sans Fin', producer: 'FalconXXL', genre: 'Zouk', bpm: 75, audio: 'https://dl.dropboxusercontent.com/scl/fi/ofou5fk0bzu0k97oglo0h/Nuit-Sans-Fin.mp3?rlkey=s3m78xmtwwl42fjysvf09m0hb&raw=1' },
-
-        { id: 93, title: 'Sur Ta Peau', producer: 'FalconXXL', genre: 'Zouk', bpm: 74, audio: 'https://dl.dropboxusercontent.com/scl/fi/9kiodvdi59pizns3g8gc1/Nuit-Sur-Ta-Peau.mp3?rlkey=krlmr48kufi3xy6zvz93jtcf3&raw=1' },
-
-        { id: 94, title: 'On A Le Temps Ce Soir', producer: 'FalconXXL', genre: 'Slow jam', bpm: 130, audio: 'https://dl.dropboxusercontent.com/scl/fi/4zx4uqpm5t5hddgcz5er0/On-a-le-temps-ce-soir.mp3?rlkey=eizz7kd2vqlh2o70osbcqbano&raw=1' },
-
-        { id: 95, title: 'On emmenage à 2 [Beat V1]', producer: 'FalconXXL', genre: 'Zouk', bpm: 75, audio: 'https://dl.dropboxusercontent.com/scl/fi/uzu7b11p1e7lxqwqbajk4/On-emm-nage-demain-Version-1.mp3?rlkey=79tgesy1oeyv8ubaj14x54v08&raw=1' },
-
-        { id: 96, title: 'On emmenage à 2 V2', producer: 'FalconXXL', genre: 'Zouk', bpm: 75, audio: 'https://dl.dropboxusercontent.com/scl/fi/ftyezjcmyff6evoimzww4/On-emm-nage-demain-Version-2.mp3?rlkey=ca30dyrxaid4wmp2qjl7mj9w8&raw=1' },
-
-        { id: 71, title: 'Amour Sous Les Toiles', producer: 'FalconXXL', genre: 'Zouk', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/6kue8uguiubpbk6ct0yoc/Amour-Sous-Les-toiles-2.mp3?rlkey=ddww52rwcp9liwn3y1g9vpe7a&raw=1' },
-
-        { id: 72, title: 'Amour Sous Les Toiles 2', producer: 'FalconXXL', genre: 'Zouk', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/bi18tnvytur6i8k1ncu02/Amour-Sous-Les-toiles.mp3?rlkey=k6gywqhsh05xq1nmjaeevymrp&raw=1' },
-
-        { id: 73, title: 'Tant de Peines', producer: 'FalconXXL', genre: 'R&B', bpm: 168, audio: 'https://dl.dropboxusercontent.com/scl/fi/55s4ghwbv0rd73lao37a8/01-ILUNGA-Tant-De-peines-Ti-de-2.mp3?rlkey=himnr1xfgesojm4hbpcdsk3dq&dl=1' },
+        // { id: 71, title: 'Amour Sous Les Toiles', producer: 'FalconXXL', genre: 'Zouk', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/6kue8uguiubpbk6ct0yoc/Amour-Sous-Les-toiles-2.mp3?rlkey=ddww52rwcp9liwn3y1g9vpe7a&raw=1' },
+        //
+        // { id: 72, title: 'Amour Sous Les Toiles 2', producer: 'FalconXXL', genre: 'Zouk', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/bi18tnvytur6i8k1ncu02/Amour-Sous-Les-toiles.mp3?rlkey=k6gywqhsh05xq1nmjaeevymrp&raw=1' },
+        //
+        // { id: 78, title: 'Cherie Coco', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 100, audio: 'https://dl.dropboxusercontent.com/scl/fi/9towdl2wuzimluikoe497/cherie-coco-Cover.mp3?rlkey=qgzqkm69esrae3ilt0flu6fff&raw=1' },
+        //
+        // { id: 79, title: 'Cherie Coco (Version)', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 100, audio: 'https://dl.dropboxusercontent.com/scl/fi/omwbmszagn29446c2u091/cherie-coco-2-Cover.mp3?rlkey=yieufyjx7u4z5lss8927g5ymh&raw=1' },
+        //
+        // { id: 81, title: 'Comment Franchir Cette Étape', producer: 'Slow jam', genre: 'Various', bpm: 112, audio: 'https://dl.dropboxusercontent.com/scl/fi/317rbjwmgjaz0rfqmum4v/Comment-franchir-cette-tape.mp3?rlkey=3e19bbj94g89vuspzxnyth0ms&raw=1' },
+        //
+        // { id: 99, title: 'Sous La Lune', producer: 'FalconXXL', genre: 'Zouk', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/cq24x0mql7yragw6kzren/Sous-la-Lune.mp3?rlkey=2cbyv75sggs544kk1ksxxai3c&raw=1' },
+        //
+        // { id: 100, title: 'Sous Les Toiles', producer: 'FalconXXL', genre: 'Zouk', bpm: 85, audio: 'https://dl.dropboxusercontent.com/scl/fi/t4imm35k6s01apo4pbr90/Sous-Les-toiles.mp3?rlkey=7ez97txuk0wbsggdf2zbc8qg8&raw=1' },
+        //
+        // { id: 101, title: 'Validé', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 100, audio: 'https://dl.dropboxusercontent.com/scl/fi/7nuwadrlf8mkrmg2qvrt4/Valid-Demo-Cover.mp3?rlkey=k3z0mb73ia7013pcje6fffqj6&raw=1' },
+        //
+        // { id: 102, title: 'Validé V2', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 100, audio: 'https://dl.dropboxusercontent.com/scl/fi/s4vswtcnrwuwhegkvoz8m/Valid-Demo-2020-Cover.mp3?rlkey=ks8kqu3cee6ra9o75fif51z6f&raw=1' },
+        //
+        // { id: 103, title: 'Validé V3', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 100, audio: 'https://dl.dropboxusercontent.com/scl/fi/2kcv5szwged7xfn64qg93/Valid-Demo-3-Cover.mp3?rlkey=z6es3y9cnxt0mcam2shu3vr5p&raw=1' },
+        //
+        // { id: 79, title: 'Cherie Coco (Version)', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 100, audio: 'https://dl.dropboxusercontent.com/scl/fi/omwbmszagn29446c2u091/cherie-coco-2-Cover.mp3?rlkey=yieufyjx7u4z5lss8927g5ymh&raw=1' },
+        //
+        // { id: 81, title: 'Comment Franchir Cette Étape', producer: 'Slow jam', genre: 'Various', bpm: 112, audio: 'https://dl.dropboxusercontent.com/scl/fi/317rbjwmgjaz0rfqmum4v/Comment-franchir-cette-tape.mp3?rlkey=3e19bbj94g89vuspzxnyth0ms&raw=1' },
+        //
+        // { id: 86, title: 'Le silences me Parle', producer: 'FalconXXL', genre: 'Afro-fusion', bpm: 99, audio: 'https://dl.dropboxusercontent.com/scl/fi/pdahuix2aj86pzopamjr2/Les-Silences-Me-Parlent.mp3?rlkey=9xr9upr8sjn9fsaodv3fdzf87&raw=1' },
+        //
+        // { id: 91, title: 'Nuit Sans Fin 2', producer: 'FalconXXL', genre: 'Zouk', bpm: 74, audio: 'https://dl.dropboxusercontent.com/scl/fi/xdxvg1y9f3y25qsorry6z/Nuit-Sans-Fin-2.mp3?rlkey=j49lowa06f4fypge9kk510ofg&raw=1' },
+        //
+        // { id: 92, title: 'Nuit Sans Fin', producer: 'FalconXXL', genre: 'Zouk', bpm: 75, audio: 'https://dl.dropboxusercontent.com/scl/fi/ofou5fk0bzu0k97oglo0h/Nuit-Sans-Fin.mp3?rlkey=s3m78xmtwwl42fjysvf09m0hb&raw=1' },
+        //
+        // { id: 93, title: 'Sur Ta Peau', producer: 'FalconXXL', genre: 'Zouk', bpm: 74, audio: 'https://dl.dropboxusercontent.com/scl/fi/9kiodvdi59pizns3g8gc1/Nuit-Sur-Ta-Peau.mp3?rlkey=krlmr48kufi3xy6zvz93jtcf3&raw=1' },
+        //
+        // { id: 94, title: 'On A Le Temps Ce Soir', producer: 'FalconXXL', genre: 'Slow jam', bpm: 130, audio: 'https://dl.dropboxusercontent.com/scl/fi/4zx4uqpm5t5hddgcz5er0/On-a-le-temps-ce-soir.mp3?rlkey=eizz7kd2vqlh2o70osbcqbano&raw=1' },
+        //
+        // { id: 95, title: 'On emmenage à 2 [Beat V1]', producer: 'FalconXXL', genre: 'Zouk', bpm: 75, audio: 'https://dl.dropboxusercontent.com/scl/fi/uzu7b11p1e7lxqwqbajk4/On-emm-nage-demain-Version-1.mp3?rlkey=79tgesy1oeyv8ubaj14x54v08&raw=1' },
+        //
+        // { id: 96, title: 'On emmenage à 2 V2', producer: 'FalconXXL', genre: 'Zouk', bpm: 75, audio: 'https://dl.dropboxusercontent.com/scl/fi/ftyezjcmyff6evoimzww4/On-emm-nage-demain-Version-2.mp3?rlkey=ca30dyrxaid4wmp2qjl7mj9w8&raw=1' },
+        //
+        // { id: 71, title: 'Amour Sous Les Toiles', producer: 'FalconXXL', genre: 'Zouk', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/6kue8uguiubpbk6ct0yoc/Amour-Sous-Les-toiles-2.mp3?rlkey=ddww52rwcp9liwn3y1g9vpe7a&raw=1' },
+        //
+        // { id: 72, title: 'Amour Sous Les Toiles 2', producer: 'FalconXXL', genre: 'Zouk', bpm: 80, audio: 'https://dl.dropboxusercontent.com/scl/fi/bi18tnvytur6i8k1ncu02/Amour-Sous-Les-toiles.mp3?rlkey=k6gywqhsh05xq1nmjaeevymrp&raw=1' },
+        //
+        // { id: 73, title: 'Tant de Peines', producer: 'FalconXXL', genre: 'R&B', bpm: 168, audio: 'https://dl.dropboxusercontent.com/scl/fi/55s4ghwbv0rd73lao37a8/01-ILUNGA-Tant-De-peines-Ti-de-2.mp3?rlkey=himnr1xfgesojm4hbpcdsk3dq&dl=1' },
 
     ],
 
     'Dutch songs': [
-        { id: 61, title: 'Eerste Fantasie', producer: 'FalconXXL', genre: 'Slow jam', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/q38bk1k12xmzx4ugms9gu/17.-Urban-Love-Pure-fantasie-feat.-Euro-M.-Jordan-5-Cover.mp3?rlkey=92pcf75dhttgdhh5ys293zh1m&raw=1' },
-
-        { id: 62, title: 'Tweede fantasie (Remix)', producer: 'FalconXXL', genre: 'Slow jam', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/zwyjshtb4uibovm88y28p/17.-Urban-Love-Pure-fantasie-feat.-Euro-M.-Jordan-6-Cover.mp3?rlkey=1q6914cbcds0jsdpwnheimhll&raw=1' },
-
-        { id: 63, title: 'Tweede fantasie', producer: 'FalconXXL', genre: 'Slow jam', bpm: 114, audio: 'https://dl.dropboxusercontent.com/scl/fi/5bcy22bfb184s2xlylksj/18.-Urban-Love-There-is-the-door-feat.-Bentley-Cover.mp3?rlkey=iic1s5et74988ursv6sjoricx&raw=1' },
-
-        { id: 64, title: 'Het blijft een fantasie', producer: 'FalconXXL', genre: 'Slow jam', bpm: 114, audio: 'https://dl.dropboxusercontent.com/scl/fi/kx6cbt3rp4kygicn82mw4/18.-Urban-Love-There-is-the-door-feat.-Bentley-2-Cover.mp3?rlkey=s9s17bmeb8ccra78a01sbdxnu&raw=1' },
-
-        { id: 66, title: 'Pure Fantasie', producer: 'FalconXXL', genre: 'Slow jam', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/a9216fw60qqdzy1svgbdn/20.-Urban-Love-Pure-fantasie-Remix-1-feat.-Euro-M.-Jordan-Bonus-Cover-7.mp3?rlkey=dpzk5ux6d5biyuh59uxhl760d&raw=1' },
-
-        { id: 67, title: 'Pure Fantasie (Remix)', producer: 'FalconXXL', genre: 'Slow jam', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/g8oh92qy83m5jbiutxtow/20.-Urban-Love-Pure-fantasie-Remix-2-feat.-Euro-M.-Jordan-Bonus-Cover-7.mp3?rlkey=1iw1omeiot6oon3l1851gkiry&raw=1' },
-
-        { id: 68, title: 'Pure Fantasie (Remix Dj Sigma)', producer: 'Slow jam', genre: 'Various', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/tqsyjjgs0b71hp0x6z549/20.-Urban-Love-Pure-fantasie-Remix-3-feat.-Euro-M.-Jordan-Bonus-Cover-8.mp3?rlkey=sbs0kexpgqudfrar7upfiu8f4&raw=1' },
-
-        { id: 69, title: 'Pure Fantasie (Remix 3)', producer: 'Slow jam', genre: 'Various', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/0xr6a0jj71s5ukelk06el/20.-Urban-Love-Pure-fantasie-Remix-4-feat.-Euro-M.-Jordan-Bonus-Cover-8.mp3?rlkey=q81i8oa6t9pxwuxalhg4gn40m&raw=1' },
-
-        { id: 109, title: 'One More Chance (Piano String)', producer: 'FalconXXL', genre: 'Orchestral', bpm: 114, audio: 'https://dl.dropboxusercontent.com/scl/fi/h0xfw4wj4l5qckcf9yod5/One-More-Chance-Piano-String.mp3?rlkey=j89yt31mtmudps0ogj1ehh1qf&raw=1' }
+        // { id: 61, title: 'Eerste Fantasie', producer: 'FalconXXL', genre: 'Slow jam', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/q38bk1k12xmzx4ugms9gu/17.-Urban-Love-Pure-fantasie-feat.-Euro-M.-Jordan-5-Cover.mp3?rlkey=92pcf75dhttgdhh5ys293zh1m&raw=1' },
+        //
+        // { id: 62, title: 'Tweede fantasie (Remix)', producer: 'FalconXXL', genre: 'Slow jam', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/zwyjshtb4uibovm88y28p/17.-Urban-Love-Pure-fantasie-feat.-Euro-M.-Jordan-6-Cover.mp3?rlkey=1q6914cbcds0jsdpwnheimhll&raw=1' },
+        //
+        // { id: 63, title: 'Tweede fantasie', producer: 'FalconXXL', genre: 'Slow jam', bpm: 114, audio: 'https://dl.dropboxusercontent.com/scl/fi/5bcy22bfb184s2xlylksj/18.-Urban-Love-There-is-the-door-feat.-Bentley-Cover.mp3?rlkey=iic1s5et74988ursv6sjoricx&raw=1' },
+        //
+        // { id: 64, title: 'Het blijft een fantasie', producer: 'FalconXXL', genre: 'Slow jam', bpm: 114, audio: 'https://dl.dropboxusercontent.com/scl/fi/kx6cbt3rp4kygicn82mw4/18.-Urban-Love-There-is-the-door-feat.-Bentley-2-Cover.mp3?rlkey=s9s17bmeb8ccra78a01sbdxnu&raw=1' },
+        //
+        // { id: 66, title: 'Pure Fantasie', producer: 'FalconXXL', genre: 'Slow jam', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/a9216fw60qqdzy1svgbdn/20.-Urban-Love-Pure-fantasie-Remix-1-feat.-Euro-M.-Jordan-Bonus-Cover-7.mp3?rlkey=dpzk5ux6d5biyuh59uxhl760d&raw=1' },
+        //
+        // { id: 67, title: 'Pure Fantasie (Remix)', producer: 'FalconXXL', genre: 'Slow jam', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/g8oh92qy83m5jbiutxtow/20.-Urban-Love-Pure-fantasie-Remix-2-feat.-Euro-M.-Jordan-Bonus-Cover-7.mp3?rlkey=1iw1omeiot6oon3l1851gkiry&raw=1' },
+        //
+        // { id: 68, title: 'Pure Fantasie (Remix Dj Sigma)', producer: 'Slow jam', genre: 'Various', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/tqsyjjgs0b71hp0x6z549/20.-Urban-Love-Pure-fantasie-Remix-3-feat.-Euro-M.-Jordan-Bonus-Cover-8.mp3?rlkey=sbs0kexpgqudfrar7upfiu8f4&raw=1' },
+        //
+        // { id: 69, title: 'Pure Fantasie (Remix 3)', producer: 'Slow jam', genre: 'Various', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/0xr6a0jj71s5ukelk06el/20.-Urban-Love-Pure-fantasie-Remix-4-feat.-Euro-M.-Jordan-Bonus-Cover-8.mp3?rlkey=q81i8oa6t9pxwuxalhg4gn40m&raw=1' },
+        //
+        // { id: 109, title: 'One More Chance (Piano String)', producer: 'FalconXXL', genre: 'Orchestral', bpm: 114, audio: 'https://dl.dropboxusercontent.com/scl/fi/h0xfw4wj4l5qckcf9yod5/One-More-Chance-Piano-String.mp3?rlkey=j89yt31mtmudps0ogj1ehh1qf&raw=1' }
     ],
 
     'Hip-Hop (Trap)': [
@@ -159,15 +159,15 @@ const beatsData = {
 
     'Slow Jam (R&B)':
         [
-            { id: 44, title: 'On a le temps ce soir', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 130, audio: 'https://dl.dropboxusercontent.com/scl/fi/pxuz5wjatkxaeiql4dva1/On-a-le-temps-ce-soir-Instrumental-2.mp3?rlkey=pts6y4yiabo1630uv0w6f57ii', AirbitLink:"" },
-            { id: 45, title: 'Fantasy', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 68, audio: 'https://dl.dropboxusercontent.com/scl/fi/r904g3vttsngpn6hbkd2a/17.-Urban-Love-Pure-fantasie-feat.-Euro-M.-Jordan-5-Instrumental.mp3?rlkey=buj636dnvs1vahcqahlvq7mha', AirbitLink: "https://airbit.com/FalconXXL/fantasy" },
-            { id: 46, title: 'There is the door 1', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 109, audio: 'https://dl.dropboxusercontent.com/scl/fi/qvbyewmh44ix656j5dfuu/18.-Urban-Love-There-is-the-door-feat.-Bentley-Cover-Instrumental.mp3?rlkey=qex2hy9ses6p0gukbdkt9rtlg', AirbitLink:"" },
-            { id: 47, title: 'Comment franchir cette étape', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 112, audio: 'https://dl.dropboxusercontent.com/scl/fi/m3g1pyfym2yom7vrujvhj/Comment-franchir-cette-tape-Instrumental.mp3?rlkey=jv4wya4vt6gvrgns0sghngpe5', AirbitLink:"" },
-            { id: 48, title: 'The door', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 109, audio: 'https://dl.dropboxusercontent.com/scl/fi/xnfwas1d7hzltscn3p3qu/18.-Urban-Love-There-is-the-door-feat.-Bentley-Cover-3-Instrumental.mp3?rlkey=1i3qixtxk6an4xucbv3tx8fk0', AirbitLink: "https://airbit.com/FalconXXL/the-door" },
-            { id: 49, title: 'Pure fantasie 1', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 68, audio: 'https://dl.dropboxusercontent.com/scl/fi/hlq5qo8h9v9rnchl6blsv/20.-Urban-Love-Pure-fantasie-Remix-1-feat.-Euro-M.-Jordan-Bonus-Cover-Instrumental.mp3?rlkey=e8h64f1x3bbi7mrkgh8x6hfff', AirbitLink:"" },
-            { id: 50, title: 'There is the door 3', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 109, audio: 'https://dl.dropboxusercontent.com/scl/fi/whqrbxoyxtxggmkzuana0/18.-Urban-Love-There-is-the-door-feat.-Bentley-2-Cover-Instrumental.mp3?rlkey=bml5ng4xmrlcm19on7lq6swg7', AirbitLink:"" },
-            { id: 51, title: 'Pure fantasie 3', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/3nsgicqdsz2td0iye2kov/20.-Urban-Love-Pure-fantasie-Remix-3-feat.-Euro-M.-Jordan-Bonus-Cover-Instrumental.mp3?rlkey=gafjqq52c55lw2m8s1vafu51t', AirbitLink:"" },
-            { id: 52, title: 'Pure fantasie 2', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/b3kxe16gaq0zi7qfymk5u/20.-Urban-Love-Pure-fantasie-Remix-4-feat.-Euro-M.-Jordan-Bonus-Cover-Instrumental.mp3?rlkey=53dei3wjfwklwo7b15ux41f0v', AirbitLink:"" },
+        //     { id: 44, title: 'On a le temps ce soir', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 130, audio: 'https://dl.dropboxusercontent.com/scl/fi/pxuz5wjatkxaeiql4dva1/On-a-le-temps-ce-soir-Instrumental-2.mp3?rlkey=pts6y4yiabo1630uv0w6f57ii', AirbitLink:"" },
+        //     { id: 45, title: 'Fantasy', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 68, audio: 'https://dl.dropboxusercontent.com/scl/fi/r904g3vttsngpn6hbkd2a/17.-Urban-Love-Pure-fantasie-feat.-Euro-M.-Jordan-5-Instrumental.mp3?rlkey=buj636dnvs1vahcqahlvq7mha', AirbitLink: "https://airbit.com/FalconXXL/fantasy" },
+        //     { id: 46, title: 'There is the door 1', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 109, audio: 'https://dl.dropboxusercontent.com/scl/fi/qvbyewmh44ix656j5dfuu/18.-Urban-Love-There-is-the-door-feat.-Bentley-Cover-Instrumental.mp3?rlkey=qex2hy9ses6p0gukbdkt9rtlg', AirbitLink:"" },
+        //     { id: 47, title: 'Comment franchir cette étape', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 112, audio: 'https://dl.dropboxusercontent.com/scl/fi/m3g1pyfym2yom7vrujvhj/Comment-franchir-cette-tape-Instrumental.mp3?rlkey=jv4wya4vt6gvrgns0sghngpe5', AirbitLink:"" },
+        //     { id: 48, title: 'The door', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 109, audio: 'https://dl.dropboxusercontent.com/scl/fi/xnfwas1d7hzltscn3p3qu/18.-Urban-Love-There-is-the-door-feat.-Bentley-Cover-3-Instrumental.mp3?rlkey=1i3qixtxk6an4xucbv3tx8fk0', AirbitLink: "https://airbit.com/FalconXXL/the-door" },
+        //     { id: 49, title: 'Pure fantasie 1', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 68, audio: 'https://dl.dropboxusercontent.com/scl/fi/hlq5qo8h9v9rnchl6blsv/20.-Urban-Love-Pure-fantasie-Remix-1-feat.-Euro-M.-Jordan-Bonus-Cover-Instrumental.mp3?rlkey=e8h64f1x3bbi7mrkgh8x6hfff', AirbitLink:"" },
+        //     { id: 50, title: 'There is the door 3', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 109, audio: 'https://dl.dropboxusercontent.com/scl/fi/whqrbxoyxtxggmkzuana0/18.-Urban-Love-There-is-the-door-feat.-Bentley-2-Cover-Instrumental.mp3?rlkey=bml5ng4xmrlcm19on7lq6swg7', AirbitLink:"" },
+        //     { id: 51, title: 'Pure fantasie 3', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/3nsgicqdsz2td0iye2kov/20.-Urban-Love-Pure-fantasie-Remix-3-feat.-Euro-M.-Jordan-Bonus-Cover-Instrumental.mp3?rlkey=gafjqq52c55lw2m8s1vafu51t', AirbitLink:"" },
+        //     { id: 52, title: 'Pure fantasie 2', producer: 'FalconXXL', genre: 'Slow Jam (R&B)', bpm: 120, audio: 'https://dl.dropboxusercontent.com/scl/fi/b3kxe16gaq0zi7qfymk5u/20.-Urban-Love-Pure-fantasie-Remix-4-feat.-Euro-M.-Jordan-Bonus-Cover-Instrumental.mp3?rlkey=53dei3wjfwklwo7b15ux41f0v', AirbitLink:"" },
         ],
 
 
@@ -614,10 +614,10 @@ function Songs() {
                             Contact
                         </NavLink>
 
-                        <a href="https://www.falconxxl.com"
+                        <a href="https://www.nexteclat.com"
                            target="_blank"
                            rel="noopener noreferrer"
-                           className="navbar-link active">FalconXXL</a>
+                           className="navbar-link active">Nexteclat</a>
                     </div>
 
                     <SocialIcons />
@@ -649,7 +649,7 @@ function Songs() {
                         <NavLink to="/Collab" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Collab</NavLink>
                         {/*<NavLink to="/Faq" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>FAQ</NavLink>*/}
                         <NavLink to="/Contact" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
-                        <a href="https://www.falconxxl.com" className="mobile-menu-link mobile-menu-link-special" onClick={() => setMobileMenuOpen(false)}>FalconXXL</a>
+                        <a href="https://www.nexteclat.com" className="mobile-menu-link mobile-menu-link-special" onClick={() => setMobileMenuOpen(false)}>Nexteclat</a>
                     </div>
                 </div>
             </nav>
@@ -838,8 +838,8 @@ function Songs() {
                             </div>
 
                             <div className="player-copyright" style={{color:"white"}}>
-                                Website developed by FALCON-XXL
-                                2026 FALCON-XXL | All rights are reserved
+                                Website developed by NEXTECLAT-XXL
+                                2026 NEXTECLAT-XXL | All rights are reserved
                             </div>
                         </div>
 

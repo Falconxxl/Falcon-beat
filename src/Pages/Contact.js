@@ -112,7 +112,7 @@ function Contact() {
                         <NavLink style={{color: "#f3bb2f"}}
                                  to="/Contact" className={({ isActive }) => isActive ? "navbar-link active" : "navbar-link"}>Contact</NavLink>
 
-                        <a href="https://www.falconxxl.com" className="navbar-link active">FalconXXL</a>
+                        <a href="https://www.nexteclat.com" className="navbar-link active">Nexteclat</a>
                     </div>
 
                     <SocialIcons />
@@ -144,7 +144,7 @@ function Contact() {
                         <NavLink to="/Collab" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Collab</NavLink>
                         {/*<NavLink to="/Faq" className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>FAQ</NavLink>*/}
                         <NavLink to='/Contact' className="mobile-menu-link" onClick={() => setMobileMenuOpen(false)}>Contact</NavLink>
-                        <a href="https://www.falconxxl.com" className="mobile-menu-link mobile-menu-link-special" onClick={() => setMobileMenuOpen(false)}>FalconXXL</a>
+                        <a href="https://www.nexteclat.com" className="mobile-menu-link mobile-menu-link-special" onClick={() => setMobileMenuOpen(false)}>Nexteclat</a>
                     </div>
                 </div>
             </nav>
